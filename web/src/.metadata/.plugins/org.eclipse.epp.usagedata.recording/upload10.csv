@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+error,log,,,"Resource is out of sync with the file system: '/refrrr/Hacker_News_files/y18.gif'.",1280597147232
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.refresh",1280597147810
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.refresh",1280597151748
+opened,editor,org.eclipse.php.ui,2.1.1.v20090914-1400,"org.eclipse.php.editor",1280597154491
+activated,editor,org.eclipse.php.ui,2.1.1.v20090914-1400,"org.eclipse.php.editor",1280597154544
+started,bundle,org.eclipse.wst.internet.cache,1.0.301.v200805140020,"org.eclipse.wst.internet.cache",1280597158843
+activated,view,org.eclipse.php.ui,2.1.1.v20090914-1400,"org.eclipse.php.ui.explorer",1280597159160
+opened,editor,org.eclipse.php.ui,2.1.1.v20090914-1400,"org.eclipse.php.editor",1280597160465
+activated,editor,org.eclipse.php.ui,2.1.1.v20090914-1400,"org.eclipse.php.editor",1280597160549
+activated,editor,org.eclipse.php.ui,2.1.1.v20090914-1400,"org.eclipse.php.editor",1280597162092
+activated,editor,org.eclipse.php.ui,2.1.1.v20090914-1400,"org.eclipse.php.editor",1280597162677
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280597165167
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280597174781
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.select.lineEnd",1280597178483
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.cut",1280597180273
+error,log,,,"",1280597182970
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1280597182971
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1280597183173
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1280597183471
+activated,view,org.eclipse.php.ui,2.1.1.v20090914-1400,"org.eclipse.php.ui.explorer",1280597189222
+activated,editor,org.eclipse.php.ui,2.1.1.v20090914-1400,"org.eclipse.php.editor",1280597189887
+activated,view,org.eclipse.ui.views,3.4.1.M20090826-0800,"org.eclipse.ui.views.ContentOutline",1280597198337
+activated,editor,org.eclipse.php.ui,2.1.1.v20090914-1400,"org.eclipse.php.editor",1280597198361
+activated,view,org.eclipse.php.ui,2.1.1.v20090914-1400,"org.eclipse.php.ui.explorer",1280597200518
+activated,editor,org.eclipse.php.ui,2.1.1.v20090914-1400,"org.eclipse.php.editor",1280597200549

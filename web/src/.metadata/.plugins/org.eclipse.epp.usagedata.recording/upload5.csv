@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+os,sysinfo,,,"linux",1280595444867
+arch,sysinfo,,,"x86_64",1280595444867
+ws,sysinfo,,,"gtk",1280595444867
+locale,sysinfo,,,"en_IN",1280595444867
+processors,sysinfo,,,"4",1280595444867
+java.runtime.name,sysinfo,,,"OpenJDK Runtime Environment",1280595444867
+java.runtime.version,sysinfo,,,"1.6.0_18-b18",1280595444867
+java.specification.name,sysinfo,,,"Java Platform API Specification",1280595444867
+java.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1280595444867
+java.specification.version,sysinfo,,,"1.6",1280595444867
+java.vendor,sysinfo,,,"Sun Microsystems Inc.",1280595444867
+java.version,sysinfo,,,"1.6.0_18",1280595444867
+java.vm.info,sysinfo,,,"mixed mode",1280595444867
+java.vm.name,sysinfo,,,"OpenJDK 64-Bit Server VM",1280595444867
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1280595444867
+java.vm.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1280595444867
+java.vm.specification.version,sysinfo,,,"1.0",1280595444867
+java.vm.vendor,sysinfo,,,"Sun Microsystems Inc.",1280595444867
+java.vm.version,sysinfo,,,"16.0-b13",1280595444867
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1280595447634
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1280595447650
+closed,view,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.internal.introview",1280595447666
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280595450717
+started,bundle,org.eclipse.jst.servlet.ui,1.1.301.v200908101600,"org.eclipse.jst.servlet.ui",1280595470580
+started,bundle,org.eclipse.jst.jee.ui,1.0.201.v200908270924,"org.eclipse.jst.jee.ui",1280595470678

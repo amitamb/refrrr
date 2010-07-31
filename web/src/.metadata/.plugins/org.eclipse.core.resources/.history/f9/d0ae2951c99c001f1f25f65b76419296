@@ -1,0 +1,319 @@
+<html>
+<head>
+
+<title>Social Media Reader</title>
+
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> 
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+<!--
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript" src="/consle/scripts/jquery.min.js"></script>
+-->
+
+<script type="text/javascript" src="supporting.js" ></script>
+<script type="text/javascript" src="dragDrop.js" ></script>
+<script type="text/javascript" src="init.js" ></script>
+
+<script type="text/javascript" src="CommonLinksManager.js" ></script>
+<script type="text/javascript" src="FrameManager.js" ></script>
+<script type="text/javascript" src="LinksManager.js" ></script>
+<script type="text/javascript" src="UserSettingsManager.js" ></script>
+<script type="text/javascript" src="SessionData.js" ></script>
+<script type="text/javascript" src="Communicator.js" ></script>
+
+<script type="text/javascript">
+
+linkDroppedEventHandler = function(dropEventData)
+{
+	var actualUrl = getActualUrl(dropEventData.url);
+	if (dropEventData.parentElementId == "linksListParent")
+	{
+		var nLink = new Link(actualUrl, frameManager.getCurrentUrl());
+		linksManager.addLink(nLink);
+	}
+	else if (dropEventData.parentElementId == "commonLinksParent")
+	{
+		var commonLink = new CommonLink(actualUrl);
+		commonLinksManager.addCommonLink(commonLink);
+	}
+};
+
+</script>
+
+<link href="reader.css" media="screen" rel="stylesheet" type="text/css" />
+
+</head>
+<body onload="">
+<!--
+<input type="text" id="crazyOLLeft" onclick="alert('h');" onmousemove="OLMouseMove(event, this)" />
+<input type="text" id="crazyOLRight" onclick="alert('h');" onmousemove="OLMouseMove(event, this)"  />
+-->
+<div id="crazyOLLeft" onmousemove="OLMouseMove(event, this)"  ondrop="fnHandleDrop(event)" ondragover="fnCancelDefault(event)" ondragenter="fnHandleDragEnter(event)" ></div>
+<div id="crazyOLRight" onmousemove="OLMouseMove(event, this)"  ondrop="fnHandleDrop(event)" ondragover="fnCancelDefault(event)" ondragenter="fnHandleDragEnter(event)" ></div>
+<div id="bodyDiv">
+<table id="topTable">
+	<tr>
+		<td id="lefttd">
+			<div id="leftDiv">
+				<div id="leftDivContent">
+					<div id="dummy" style="position:relative;top:0px;left:0px;width:100%;height:100%;">
+					<input id="overlayDropText" type="text" value="" />
+					<table>
+						<tr style="height:20px;">
+							<td id="commonLinksTd">
+								<span id="commonLinksTitle">Common Links ></span><br/>
+								<div id="commonLinksParent">
+									<!-- Common links -->
+									
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div id="linksListParent">
+									<!-- Following nbsp is a hack to make drag drop work in chrome / It was with &nbsp; along with overlayDropText -->
+									<div id="dummyLinkDiv" class="link"  onclick="">
+										<a href="#">
+										<table>
+											<tr>
+											<td rowspan="2">
+												<div class="icon"> <img src="http://localhost/favicon.ico" alt="favicon" /></div>
+											</td>
+											<td class='titleTd'>
+												<span class="title">This is title of the frame</span>
+											</td>
+											</tr>
+											<tr>
+											<td>
+												<span class="removeLink otherLink">Remove</span>
+												<span class="commentLink otherLink">Comment</span><br>
+											</td>
+											</tr>
+										</table>
+										</a>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</table>
+					</div>
+				</div>
+			</div>
+		</td>
+		<td id="righttd" colspan="2">
+			<div id="navigFrameParent">
+<!--
+		<iframe name="searchFrame" id="searchFrame" src="about:blank"></iframe>
+-->
+			</div>
+		</td>
+	</tr>
+	<tr>		
+	    <td id="bottomTd">
+			<div id="linksListParentBottom">
+                <!--Tabs should come here-->
+			</div>
+		</td>
+		<td id="bottomRightTd">
+			<a href="/" target="_blank">
+                <img id="rightBottomLogo" src="img/refrrr.png" />
+            </a>
+		</td>
+	</tr>
+	<tr id="bottomWhiteSpaceForChrome">
+		<td colspan="2">
+			&nbsp;
+			<input type="text" id="statusUrl"></input>
+		</td>
+	</tr>
+</table>
+</div>
+</body>
+<script>
+
+//var sessionData = new SessionData("http://www.google.com/search?q=india");
+var communicator = new Communicator();
+//var sessionData = new SessionData("http://localhost:8000/greader/static/oldReader/Hacker News.html");
+//var sessionData = new SessionData("http://news.ycombinator.com/");
+var sessionData = new SessionData("http://www.techcrunch.com/");
+var frameManager = new FrameManager();
+var linksManager = new LinksManager("linksListParentBottom");
+var commonLinksManager = new CommonLinksManager("commonLinksParent");
+var userSettingsManager = new UserSettingsManager();
+
+//frameManager.navigateTo("http://news.ycombinator.com/");
+frameManager.navigateTo(sessionData.getParentUrl());
+
+var cntr = 1;
+
+function testFunction()
+{
+	cntr = cntr + 1;
+	
+	document.title= cntr;
+}
+
+//overlayDropText.onmousedown=testFunction;
+
+
+var viewSquareSize = 7;
+
+function getLeftOL()
+{
+	return document.getElementById("crazyOLLeft");
+}
+
+function getRightOL()
+{
+	return document.getElementById("crazyOLRight");
+}
+
+
+// This function is called when the user 
+//  initiates a drag-and-drop operation.
+function fnHandleDragStart(event)
+{                                      
+  var oData = event.dataTransfer;
+
+  // Set the effectAllowed on the source object.
+  oData.effectAllowed = "move";
+}
+
+// This function is called by the target 
+//  object in the ondrop event.
+function fnHandleDrop(event)
+{
+	//var oTarg = window.event.srcElement;
+	var oData = event.dataTransfer;
+
+	// Cancel default action.
+	fnCancelDefault(event);
+
+	x = 0;
+	y = 0;
+	url = oData.getData("URL");
+	linkDroppedEventHandler(new DropEventData(x, y, url));
+}
+
+// This function sets the dropEffect when the user moves the 
+//  mouse over the target object.
+function fnHandleDragEnter(event)
+{
+  var oData = event.dataTransfer;
+
+  // Cancel default action.
+  fnCancelDefault(event);
+
+  // Set the dropEffect for the target object.
+  oData.dropEffect = "move";
+}
+
+function fnCancelDefault(event)
+{
+  // Cancel default action.
+  if (event.stopPropagation)
+    event.stopPropagation();
+  if (event.preventDefault)
+    event.preventDefault();
+  event.returnValue = false;
+}
+
+/*
+if (getBrowser() == "chrome" || getBrowser() == "safari" || getBrowser() == "firefox")
+{
+	$("#crazyOLLeft").replaceWith("<div id=\"crazyOLLeft\" onmousemove=\"OLMouseMove(event, this)\"  ondrop=\"fnHandleDrop(event)\" ondragover=\"fnCancelDefault(event)\" ondragenter=\"fnHandleDragEnter(event)\" ></div>");
+	$("#crazyOLRight").replaceWith("<div id=\"crazyOLRight\" onmousemove=\"OLMouseMove(event, this)\" ondrop=\"alert('great');fnHandleDrop(event);\" ondragover=\"fnCancelDefault(event)\" ondragenter=\"fnHandleDragEnter(event)\" ></div>");
+
+}
+*/
+
+var leftOL = document.getElementById("crazyOLLeft");
+var rightOL = document.getElementById("crazyOLRight");
+
+
+function rightOLMouseMove(event, rightOL)
+{
+	//alert("move");
+	//alert(event);
+	
+}
+
+function rightDrop(eventData, rightText)
+{
+	//var url = rightText.value;
+	
+	x = 0;
+	y = 0;
+	url = rightOL.value;
+	
+	linkDroppedEventHandler(new DropEventData(x, y, url));
+	
+	rightOL.value = "";
+
+	//document.getElement
+}
+
+//rightOL.ondrop = rightDrop;
+
+if (getBrowser() == "firefox")
+{
+	//rightOL.ondrop = rightDrop;
+}
+
+
+var clientWidth = rightOL.clientWidth;
+
+
+var lastResizeX = 0;
+
+function OLMouseMove(event, sourceElem)
+{
+	//alert("move");
+	//alert(event);
+	//var leftOL = document.getElementById("crazyOLLeft");
+	//var rightOL = document.getElementById("crazyOLRight");
+	
+	var X = event.clientX;
+	var Y = event.clientY;
+	
+	//if (lastResizeX >= X || (X - (lastResizeX - viewSquareSize)) >= 0)
+	
+	var stepFractionLeft = (X % viewSquareSize);
+	var stepFractionRight = (viewSquareSize - stepFractionLeft);
+
+	var leftWidth = X - stepFractionLeft;
+	var rightWidth = (clientWidth - X) - stepFractionRight;
+		
+	rightOL.style.width = rightWidth+'px';
+	leftOL.style.width = leftWidth+'px';
+	
+	//alert(rightWidth);
+	//alert(leftWidth);
+
+/*
+	if (sourceElem.id == "crazyOLLeft")
+	{
+		var newX = X - (viewSquareSize - (X % viewSquareSize));
+
+		rightOL.style.width = (rightOL.clientWidth + viewSquareSize) + "px";
+		leftOL.style.width = (leftOL.clientWidth - viewSquareSize) + "px";
+	}
+	else
+	{
+		//var newX = X + (viewSquareSize - (X % viewSquareSize));
+		
+		rightOL.style.width = (rightOL.clientWidth - viewSquareSize) + "px";
+		leftOL.style.width = (leftOL.clientWidth + viewSquareSize) + "px";
+	}
+	
+*/
+	
+	//rightOL.style.width = (newX + viewSquareSize)+'px';
+	//rightOL.style.width = (newX + viewSquareSize)+'px';
+	//leftOL.style.width = (newX - viewSquareSize)+'px';
+}
+</script>
+</html>

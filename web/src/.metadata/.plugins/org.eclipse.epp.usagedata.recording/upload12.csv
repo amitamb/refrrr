@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+activated,editor,org.eclipse.wst.css.ui,1.0.401.v200907171457,"org.eclipse.wst.css.core.csssource.source",1280597310997
+activated,view,org.eclipse.php.ui,2.1.1.v20090914-1400,"org.eclipse.php.ui.explorer",1280597313023
+no handler,command,org.eclipse.php.ui,2.1.1.v20090914-1400,"org.eclipse.php.ui.edit.text.php.open.type.hierarchy",1280597315440
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.refresh",1280597315582
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.refresh",1280597320839
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.refresh",1280597321358
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.refresh",1280597321510
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.refresh",1280597321698
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.refresh",1280597321862
+opened,editor,org.eclipse.php.ui,2.1.1.v20090914-1400,"org.eclipse.php.editor",1280597323247
+activated,editor,org.eclipse.php.ui,2.1.1.v20090914-1400,"org.eclipse.php.editor",1280597323310
+activated,editor,org.eclipse.wst.css.ui,1.0.401.v200907171457,"org.eclipse.wst.css.core.csssource.source",1280597324841
+closed,editor,org.eclipse.php.ui,2.1.1.v20090914-1400,"org.eclipse.php.editor",1280597324841
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280597325539
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280597332832
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1280597337067
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1280597337551
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1280597337913
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1280597338082
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1280597339050
+activated,editor,org.eclipse.php.ui,2.1.1.v20090914-1400,"org.eclipse.php.editor",1280597340332
+error,log,,,"",1280597342117
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1280597342119
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1280597342723
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280597345115

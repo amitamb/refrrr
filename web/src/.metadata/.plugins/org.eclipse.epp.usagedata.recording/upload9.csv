@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280597022364
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280597023341
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280597024350
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280597036734
+activated,view,org.eclipse.php.ui,2.1.1.v20090914-1400,"org.eclipse.php.ui.explorer",1280597038785
+started,bundle,org.eclipse.ltk.ui.refactoring,3.4.100.v20090604,"org.eclipse.ltk.ui.refactoring",1280597039462
+opened,editor,org.eclipse.wst.jsdt.ui,1.0.200.v200905242047,"org.eclipse.wst.jsdt.ui.CompilationUnitEditor",1280597039571
+activated,editor,org.eclipse.wst.jsdt.ui,1.0.200.v200905242047,"org.eclipse.wst.jsdt.ui.CompilationUnitEditor",1280597039760
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280597042140
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280597140779
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280597140838
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280597144589
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280597144793
+activated,editor,org.eclipse.php.ui,2.1.1.v20090914-1400,"org.eclipse.php.editor",1280597145846
+closed,editor,org.eclipse.wst.jsdt.ui,1.0.200.v200905242047,"org.eclipse.wst.jsdt.ui.CompilationUnitEditor",1280597145846
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280597145932
+activated,view,org.eclipse.php.ui,2.1.1.v20090914-1400,"org.eclipse.php.ui.explorer",1280597146006
+closed,editor,org.eclipse.php.ui,2.1.1.v20090914-1400,"org.eclipse.php.editor",1280597146006
+error,log,,,"Resource is out of sync with the file system: '/refrrr/Hacker_News_files/grayarrow.gif'.",1280597147229
+error,log,,,"Resource is out of sync with the file system: '/refrrr/Hacker_News_files/hnsearch.png'.",1280597147229
+error,log,,,"Resource is out of sync with the file system: '/refrrr/Hacker_News_files/mixpanel_partner_logo_borderless.gif'.",1280597147230
+error,log,,,"Resource is out of sync with the file system: '/refrrr/Hacker_News_files/news.css'.",1280597147230
+error,log,,,"Resource is out of sync with the file system: '/refrrr/Hacker_News_files/propres.html'.",1280597147231
+error,log,,,"Resource is out of sync with the file system: '/refrrr/Hacker_News_files/prowidget.png'.",1280597147231
+error,log,,,"Resource is out of sync with the file system: '/refrrr/Hacker_News_files/s.gif'.",1280597147232
