@@ -1,0 +1,78 @@
+
+Refrrr
+
+
+Workflow:
+
+1. User is on a website that has many links [originUrl]
+
+Example:
+
+    - http://www.google.com/search?q=java
+
+    - http://news.ycombinator.com/
+
+2. He wants to go through the links on the page.
+
+(Normally he would open those links in new tabs)
+
+    User decides to use refrrr.
+
+    He has two options
+
+    - Click on bookmark button for refrrr
+	  OR
+	- Changes URL by adding refrrr.com to end of domain name. (Example: http://www.rediff.com/ to http://www.rediff.com.refrrr.com/)
+	
+	which will take him to http://www.refrr.com/o=[originurl]
+
+3. Now page reloads with iframe containing the [originUrl] and navigation bar at bottom with a tab at left for [originUrl]
+
+   It will also have tablinks from previus sessions if user is logged in. 
+
+   When user is not logged in 
+
+[[
+
+The bottom navigaton bar will have links
+
+Navigation bar at bottom and its layout
+
+-------------------------------------------------------------------------------------------------------------------------------
+Icon for originUrl & title  H:30px  X |                                                                | Refrrr - it points to 1.
+<--Width = 200 px -------->           |                                                                | Logo
+-------------------------------------------------------------------------------------------------------------------------------
+    						Height 20px								[Current Page url] | [username*] | [Mode**] | [Settings***]
+*  - If logged in / Login link with text [Login]
+   - Login page will be shown in a new iframe but it will not be shown in tabs list
+   - When user logs in that login script should check if inside iframe update parent page's layout with username and mode + settings buttons
+   - When logging is disabled
+	 It is as if user is not logged in
+   - else if he wants to
+       - To continue with current session
+       - Merge with previus session
+       - Continue with previus session
+
+//   - Show prev and next button to go to previus session
+//   - Also update server about current session if logging is enabled
+
+** - Show mode only when logged in
+	[Logging / Do not log]
+*** - Show mode only when logged in
+	- Settings should take user to http://www.refrrr.com/settings
+	- Show it as new tab in current window
+
+1. http://www.refrrr.com/showLog?url=[originUrl]
+   - Open it in new frame but don't add tab
+
+]]
+
+4. User can now drag and drop links to the bottom and they will get added at bottom navigation bar
+   Also server will be informed depending on logging status
+[[ Optional get some supporting links for the document ]]
+
+
+
+
+5. 
+
