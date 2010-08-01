@@ -355,7 +355,7 @@ function FrameManager(enableIFrameBusterBuster)
 		setInterval(function() {  
 			if (prevent_bust > 0) {
 				prevent_bust -= 2;
-				window.top.location = '204.php'; 
+				window.top.location = 'support/204.php'; 
 				frameManager.setLastLoadedLinkAsIFrameBuser();
 			  }  
 			}, 1) ;

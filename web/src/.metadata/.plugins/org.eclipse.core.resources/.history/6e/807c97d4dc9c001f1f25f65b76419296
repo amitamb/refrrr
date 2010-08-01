@@ -1,0 +1,27 @@
+<?php
+require_once('framework/basicFrameworkInclude.php');
+
+require_once('constants/user.php');
+
+require_once('collections/User.php');
+?>
+
+<img src="images/refrrr.png"> <br />
+
+<?php 
+
+//Show login
+$inputs = array();
+
+$inputs[] = new Input('text', USERNAME, USERNAME, '', 'Username');
+$inputs[] = new Input('password', PASSWORD, PASSWORD, '', 'Password');
+$inputs[] = new Input('submit', '', '', 'Submit', '');
+
+showForm($inputs, '', 'get');
+
+User::printLoginForm();
+
+?>
+
+Go to <a href="reader.htm">Reader</a>
+

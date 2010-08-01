@@ -1,0 +1,12 @@
+<?php 
+
+require_once('collections/User.php');
+
+$method = getMethod();
+
+switch ($method) {
+    default:
+    	User::processMethod($method);
+}
+
+?>

@@ -1,0 +1,8 @@
+<?php
+
+function request($param)
+{
+	$val = $_GET[$param];
+}
+
+?>

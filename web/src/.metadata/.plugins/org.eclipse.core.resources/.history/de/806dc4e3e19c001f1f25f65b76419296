@@ -1,0 +1,13 @@
+<?php
+
+function requestParam($param)
+{
+	$val = $_GET[$param];
+	
+	if ($val == null)
+		return $_POST[$param];
+	else
+		return $val;
+}
+
+?>

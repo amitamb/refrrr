@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+error,log,,,"Error receiving file: /refrrr/constants/user.php content: retrying(6)",1280616519135
+error,log,,,"Error receiving file: /refrrr/constants/user.php content: retrying(5)",1280616519136
+error,log,,,"Error receiving file: /refrrr/constants/user.php content: retrying(4)",1280616519138
+error,log,,,"Error receiving file: /refrrr/constants/user.php content: retrying(3)",1280616519139
+error,log,,,"Error receiving file: /refrrr/constants/user.php content: retrying(2)",1280616519140
+error,log,,,"Error receiving file: /refrrr/constants/user.php content: retrying(1)",1280616519141
+error,log,,,"Resource is out of sync with the file system: '/refrrr/constants/user.php'.",1280616525078
+activated,view,org.eclipse.php.ui,2.1.1.v20090914-1400,"org.eclipse.php.ui.explorer",1280616525079
+activated,editor,org.eclipse.php.ui,2.1.1.v20090914-1400,"org.eclipse.php.editor",1280616533880
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1280616540854
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280616543089
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280616545063
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280616545420
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280616546858
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280616547988
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280616584271
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1280616586801
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1280616594007
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280616594485
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280616599617
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.select.lineStart",1280616614741
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.copy",1280616615302
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.goto.lineEnd",1280616615435
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1280616615879
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.goto.lineStart",1280616616362

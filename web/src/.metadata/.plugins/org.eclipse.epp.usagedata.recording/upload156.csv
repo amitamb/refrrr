@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.goto.wordPrevious",1280636900421
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.select.wordPrevious",1280636901060
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1280636901302
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1280636901799
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.goto.wordNext",1280636902163
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.goto.wordNext",1280636903054
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1280636906089
+error,log,,,"Incompatible debugger version.\nThe remote debugger version might not match the expected protocol version (2006040705).",1280638189410
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280638189471
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280642192096
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280642193814
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280642859159
+activated,view,org.eclipse.php.ui,2.1.1.v20090914-1400,"org.eclipse.php.ui.explorer",1280642861423
+activated,editor,org.eclipse.wst.html.ui,1.0.401.v200908111935,"org.eclipse.wst.html.core.htmlsource.source",1280642862140
+activated,view,org.eclipse.php.ui,2.1.1.v20090914-1400,"org.eclipse.php.ui.explorer",1280642876138
+opened,editor,org.eclipse.wst.jsdt.ui,1.0.200.v200905242047,"org.eclipse.wst.jsdt.ui.CompilationUnitEditor",1280642880003
+activated,editor,org.eclipse.wst.jsdt.ui,1.0.200.v200905242047,"org.eclipse.wst.jsdt.ui.CompilationUnitEditor",1280642880095
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.smartEnter",1280642884075
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1280642892160
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1280642893835
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280642894396
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280642900131
+activated,view,org.eclipse.php.ui,2.1.1.v20090914-1400,"org.eclipse.php.ui.explorer",1280642901744
+activated,editor,org.eclipse.wst.css.ui,1.0.401.v200907171457,"org.eclipse.wst.css.core.csssource.source",1280642903766
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.undo",1280642908639

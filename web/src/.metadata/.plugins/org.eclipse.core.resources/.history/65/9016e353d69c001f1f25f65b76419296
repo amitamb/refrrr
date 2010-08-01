@@ -1,0 +1,8 @@
+<?php
+require_once('basicFrameworkInclude.php');
+?>
+
+<img src="images/refrrr.png"> <br />
+
+Go to <a href="reader.htm">Reader</a>
+

@@ -1,0 +1,17 @@
+<?php
+require_once('basicFrameworkInclude.php');
+?>
+
+<img src="images/refrrr.png"> <br />
+
+<?php 
+
+//Show login
+$inputs = array()
+
+$inputs[] = 
+
+?>
+
+Go to <a href="reader.htm">Reader</a>
+

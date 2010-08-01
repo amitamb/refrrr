@@ -1,0 +1,34 @@
+<?
+
+class Input
+{
+	protected $value=null;
+	protected $name=null;
+	protected $id=null;
+	protected $type=null;
+	
+	public function __construct($type, $id, $name, $value)
+	{
+		$this->type = $type;
+		$this->id = $id;
+		$this->name = $name;
+		$this->value = $value;
+	}
+	
+	public function __toString()
+	{
+		return '<input type="$type" value="$value" name="$name" id="$id"></input>';
+	}
+}
+
+function showForm($inputs, $action, $method)
+{
+	print '<form method="$method" action="$action">';
+	foreach ($inputs as $input)
+	{
+		print $input;
+	}
+	print '</form>';
+}
+
+?>

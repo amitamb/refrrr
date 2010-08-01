@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename source module &apos;collections.user.php&apos; to &apos;User.php&apos;&#x0A;- Original element: &apos;collections\user.php&apos;&#x0A;- Renamed element: &apos;collections\User.php&apos;" description="Rename source module &apos;user.php&apos;" flags="589830" id="org.eclipse.dltk.ui.rename.sourcemodule" input="/&lt;collections{user.php" name="User.php" stamp="1280605517334" version="1.0"/>
+</session>

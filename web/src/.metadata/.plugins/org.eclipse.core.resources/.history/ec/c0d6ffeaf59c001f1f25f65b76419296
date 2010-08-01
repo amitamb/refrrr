@@ -1,0 +1,26 @@
+<?php
+
+define("METHOD", "method");
+
+function getMethod()
+{
+	$method = requestParam("method");
+	if ($method == null)
+		return "index";
+	
+	return $method;
+}
+
+function redirectSuccess($location)
+{
+	header('location:'.$location);
+	exit();
+}
+
+function redirectFailure($location, $message)
+{
+	header('location:'.$location);
+	exit();
+}
+
+?>

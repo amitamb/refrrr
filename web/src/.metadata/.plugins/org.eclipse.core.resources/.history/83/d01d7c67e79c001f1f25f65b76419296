@@ -1,0 +1,21 @@
+<?php
+require_once('collections/User.php');
+?>
+
+<?php 
+
+if (User::isLoggedIn())
+{
+	User::showLogout();
+}
+else
+{
+	User::printLoginForm();	
+}
+
+?>
+
+<img src="images/refrrr.png"> <br />
+
+Go to <a href="reader.htm">Reader</a>
+

@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+no handler,command,org.eclipse.datatools.sqltools.result.ui,,"org.eclipse.datatools.sqltools.result.removeAllInstances",1280603823028
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1280603828365
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280603829103
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280603834102
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.goto.lineStart",1280603861649
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.goto.lineStart",1280603862743
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.goto.lineStart",1280603863655
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.goto.lineStart",1280603864473
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.goto.lineStart",1280603865233
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1280603866042
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280603866533
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280603868089
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280603869462
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280603872934
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1280603882072
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280603882326
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280603887646
+activated,editor,org.eclipse.php.ui,2.1.1.v20090914-1400,"org.eclipse.php.editor",1280603887769
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1280603902545
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280603903106
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280603905890
+activated,editor,org.eclipse.php.ui,2.1.1.v20090914-1400,"org.eclipse.php.editor",1280603906026
+activated,editor,org.eclipse.php.ui,2.1.1.v20090914-1400,"org.eclipse.php.editor",1280603906764
+activated,editor,org.eclipse.php.ui,2.1.1.v20090914-1400,"org.eclipse.php.editor",1280603907681
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1280603911216

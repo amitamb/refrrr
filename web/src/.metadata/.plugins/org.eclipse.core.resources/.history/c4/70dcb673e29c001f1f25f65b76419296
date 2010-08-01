@@ -1,0 +1,14 @@
+<?php
+
+function getMethod()
+{
+	$method = requestParam("method");
+	if ($method == null)
+		return "index";
+	
+	return $method;
+}
+
+function redirectSuccess()
+
+?>

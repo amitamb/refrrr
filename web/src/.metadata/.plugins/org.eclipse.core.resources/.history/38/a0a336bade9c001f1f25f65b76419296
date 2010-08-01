@@ -1,0 +1,10 @@
+<?php
+
+function request($param)
+{
+	$val = $_GET[$param];
+	
+	if ($val == null)
+}
+
+?>

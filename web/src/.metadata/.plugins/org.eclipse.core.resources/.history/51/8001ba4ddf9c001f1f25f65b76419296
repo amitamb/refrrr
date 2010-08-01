@@ -1,0 +1,10 @@
+<?php
+
+function getMethod()
+{
+	$method = requestParam["method"];
+	if ($method )
+	return ;
+}
+
+?>

@@ -1,0 +1,16 @@
+<?php
+require_once('collections/User.php');
+?>
+
+<img src="images/refrrr.png"> <br />
+
+<?php 
+
+User::printLoginForm();
+
+
+
+?>
+
+Go to <a href="reader.htm">Reader</a>
+
