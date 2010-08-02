@@ -1,4 +1,0 @@
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^(.*\.)+(.*\.)refrrr.com$ [NC]
-RewriteCond %{REQUEST_URI} !^/redirect.php [NC]
-RewriteRule ^(.*)$ /redirect.php?host=%1%2&path=%{REQUEST_URI}&queryString=%{QUERY_STRING} [R,L]
