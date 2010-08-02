@@ -225,8 +225,8 @@ function LinksManager(linksListParentId, staticTopLink)
 	{
 		var retVal;
 		//alert(linkDivObj.css("background-color"));
-		
-		if (linkDivObj.css("background-color") == "rgb(129, 190, 247)")
+
+		if (linkDivObj.css("background-color") == "rgb(210, 225, 246)")
 		{
 			retVal = true;
 		}
@@ -263,7 +263,8 @@ function LinksManager(linksListParentId, staticTopLink)
 		
 		this.deSelectAll();
 		
-		linkDivObj.css("background-color", "#81BEF7");
+		//linkDivObj.css("background-color", "#81BEF7");
+		linkDivObj.css("background-color", "#d2e1f6");
 		linkDivObj.css("border-style", "inset");
 	}
 	

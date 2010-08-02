@@ -80,9 +80,4 @@
   <entries path="/home/amit/eclipse/plugins/org.eclipse.php.core_2.1.1.v20090914-1400/Resources/language/php5/pdo_mysql.php" timestamp="1252892916000" lastAccessTime="1280595472327"/>
   <entries path="/home/amit/eclipse/plugins/org.eclipse.php.core_2.1.1.v20090914-1400/Resources/language/php5/ldap.php" timestamp="1252892916000" lastAccessTime="1280595472327"/>
   <entries path="/home/amit/refrrr/web/src/refrrr/support/204.php" timestamp="1270736096000" lastAccessTime="1280597152481"/>
-  <entries path="/home/amit/refrrr/web/src/refrrr/framework/basicFrameworkInclude.php" timestamp="1280606757000" lastAccessTime="1280606758443"/>
-  <entries path="/home/amit/refrrr/web/src/refrrr/framework/request.php" timestamp="1280607984000" lastAccessTime="1280607985381"/>
-  <entries path="/home/amit/refrrr/web/src/refrrr/framework/formHelper.php" timestamp="1280608297000" lastAccessTime="1280608298434"/>
-  <entries path="/home/amit/refrrr/web/src/refrrr/user.php" timestamp="1280609293000" lastAccessTime="1280609294469"/>
-  <entries path="/home/amit/refrrr/web/src/refrrr/framework/controllerHelper.php" timestamp="1280616668000" lastAccessTime="1280616668925"/>
 </cache:CacheIndex>
