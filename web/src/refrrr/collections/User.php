@@ -36,7 +36,7 @@ class User
 		}
 		elseif ($method == LOGOUT)
 		{
-			User::logout();				
+			User::logout();
 		}
 	}	
 	
@@ -132,6 +132,22 @@ class User
 		{
 			
 			redirectSuccess('index.php');
+		}
+	}
+	
+	public static function getId()
+	{
+		session_set_cookie_params(31556926);
+
+		session_start();
+		if (isset($_SESSION[USERID]))
+		{
+			return $_SESSION[USERID];
+		}
+		else
+		{
+			// for now user's session id will be user name
+			return session_id();
 		}
 	}
 

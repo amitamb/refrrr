@@ -18,7 +18,7 @@ function LinksManager(linksListParentId, staticTopLink)
 	this.urlToLinkDivIdMap = Array();
 	
 	this.selectedLinkDivId = null;
-		
+
 	// private variables
 	nextLinkDivId = 0;
 
@@ -51,10 +51,10 @@ function LinksManager(linksListParentId, staticTopLink)
 			this.addAllEventHandlers(linkDivId);
 
 			frameManager.navigateTo(url, true);
-			
+						
 			if (!dontContactServer)
 			{
-				communicator.addLink(sessionData.getParentUrl(), url);
+				communicator.addLink(sessionData.getId(), url);
 			}
 		}
 		else
@@ -70,14 +70,14 @@ function LinksManager(linksListParentId, staticTopLink)
 			
 			var linkDivObj = $("#" + this.urlToLinkDivIdMap[url]);
 			
-			alert(linkDivObj);
+			alert(linkDivObj.addClass);
 
 			// Start blinking
 			linkDivObj.addClass("blink");
 
 			window._blinkingDiv = linkDivObj;
 			// Stop blinking in 1000 millis
-			setTimeout(function(){window._blinkingDiv.removeClass("blink")}, 500);
+			//setTimeout(function(){window._blinkingDiv.removeClass("blink")}, 500);
 		}
 	}
 	
@@ -106,7 +106,7 @@ function LinksManager(linksListParentId, staticTopLink)
 					// setting it to null
 					continue;
 				}
-			
+
 				if ( currentDivId == linkDivId )
 				{
 					deletedDivFound = true;
@@ -137,7 +137,7 @@ function LinksManager(linksListParentId, staticTopLink)
 		frameManager.removeFrame(url);
 		
 		// ask server to remove it
-		communicator.removeLink(sessionData.getParentUrl(), url);
+		communicator.removeLink(sessionData.getId(), url);
 	}
 	
 	this.resetTabWidth = function()
@@ -313,13 +313,55 @@ function LinksManager(linksListParentId, staticTopLink)
 	
 	this.next = function()
 	{
+		//"linkDiv"
+		// length = 7
 		
+		var currentIdNumber = parseInt(this.selectedLinkDivId.substr(7));
+		
+		for (var i=currentIdNumber+1; i<=nextLinkDivId; i++)
+		{
+			var linkDivId = "linkDiv"+i
+			
+			if (document.getElementById(linkDivId) == null)
+			{
+				continue;
+			}
+			else
+			{
+				this.linkSelected(linkDivId);
+				var url = $("#"+linkDivId).children("a:first").attr('href');
+				frameManager.navigateTo(url);
+				break;
+			}
+		}
 	}
 	
 	this.prev = function()
 	{
+		//"linkDiv"
+		// length = 7
 		
+		var currentIdNumber = parseInt(this.selectedLinkDivId.substr(7));
+		
+		for (var i=currentIdNumber-1; i>0; i--)
+		{
+			var linkDivId = "linkDiv"+i
+			
+			if (document.getElementById(linkDivId) == null)
+			{
+				continue;
+			}
+			else
+			{
+				this.linkSelected(linkDivId);
+				var url = $("#"+linkDivId).children("a:first").attr('href');
+				frameManager.navigateTo(url);
+				break;
+			}
+		}
 	}
+	
+	alert("Hey");
 	
 	this.getAppendDivHTML = function(url, linkDivId)
 	{
@@ -363,5 +405,5 @@ function LinksManager(linksListParentId, staticTopLink)
 	//this.addLink(staticTopLink, true);
 	this.addLink(new Link(sessionData.getParentUrl(), null, null), null, true);
 	
-	communicator.getLinks();
+	//communicator.getLinks();
 }

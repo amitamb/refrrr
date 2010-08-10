@@ -16,7 +16,7 @@ if ($isLoggedIn)
 else
 {
 	User::showLogin();
-	User::showRegister();	
+	User::showRegister();
 }
 
 ?>

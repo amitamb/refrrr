@@ -7,7 +7,6 @@ function Communicator()
 			targetPath,
 			data,
 			function(data){
-				//alert(data.commonlinks.toSource());
 				callback(data);
 			}
 		);
@@ -15,27 +14,18 @@ function Communicator()
 	
 	this.sendNOCallBack = function(path, data)
 	{
-		var targetPath = "/greader/"+path;
+		var targetPath = path;
+	
 		$.get(
 			targetPath,
 			data
-			//,
-			//function(data){
-				////alert("Returned");
-			//}
+			,
+			function(data){
+				//alert(data);
+			}
 		);
 	}
 
-
-	this.getCommonLinks = function(callback)
-	{
-		this.getData("default/commonlinks", null, function(data){
-			var commonlinks = data.commonlinks;
-			
-			callback(commonlinks);
-		});
-	}
-	
 	this.getLinks = function()
 	{
 		this.getData("default/getlinks", {"url" : sessionData.getParentUrl()} , function(data){
@@ -47,17 +37,17 @@ function Communicator()
 		});
 	}
 	
-	this.addLink = function(url, linkurl) // no callback needed
+	this.addLink = function(sessionId, linkurl) // no callback needed
 	{
-		var data = {"url" : url, 
-					"linkurl" : linkurl};
-		this.sendNOCallBack("default/addlink", data, function(){});
+		var data = {"_id" : sessionId, 
+					"url" : linkurl};
+		this.sendNOCallBack("addLink.php", data, function(){});
 	}
 	
-	this.removeLink = function(url, linkurl) // no callback needed
+	this.removeLink = function(sessionId, linkurl) // no callback needed
 	{
-		var data = {"url" : url, 
-					"linkurl" : linkurl};
-		this.sendNOCallBack("default/removelink", data, function(){});
+		var data = {"_id" : sessionId, 
+					"url" : linkurl};
+		this.sendNOCallBack("removeLink.php", data, function(){});
 	}
 }

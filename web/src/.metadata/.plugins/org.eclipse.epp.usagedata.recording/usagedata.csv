@@ -1,5 +1,26 @@
 what,kind,bundleId,bundleVersion,description,time
-deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280709837522
-activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280709838049
-deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280709839298
-closed,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280709841193
+started,bundle,org.eclipse.dltk.core,1.0.1.v20090910-1601,"org.eclipse.dltk.core",1281464170399
+started,bundle,org.eclipse.dltk.launching,1.0.1.v20090910-1601,"org.eclipse.dltk.launching",1281464170400
+started,bundle,org.eclipse.dltk.ui,1.0.1.v20090903-2153,"org.eclipse.dltk.ui",1281464170401
+started,bundle,org.eclipse.php.core,2.1.1.v20090914-1400,"org.eclipse.php.core",1281464170401
+started,bundle,org.eclipse.php.debug.core,2.1.1.v20090914-1400,"org.eclipse.php.debug.core",1281464170402
+started,bundle,org.eclipse.php.debug.daemon,2.1.1.v20090707-1108,"org.eclipse.php.debug.daemon",1281464170402
+started,bundle,org.eclipse.php.debug.ui,2.1.1.v20090714-1338,"org.eclipse.php.debug.ui",1281464170403
+started,bundle,org.eclipse.php.server.core,2.1.1.v20090707-1108,"org.eclipse.php.server.core",1281464170403
+started,bundle,org.eclipse.php.ui,2.1.1.v20090914-1400,"org.eclipse.php.ui",1281464170405
+started,bundle,com.python.pydev.analysis,1.5.4.2010011921,"com.python.pydev.analysis",1281464170405
+started,bundle,org.python.pydev,1.5.4.2010011921,"org.python.pydev",1281464170405
+started,bundle,org.python.pydev.core,1.5.4.2010011921,"org.python.pydev.core",1281464170405
+os,sysinfo,,,"linux",1281464170409
+arch,sysinfo,,,"x86_64",1281464170409
+ws,sysinfo,,,"gtk",1281464170409
+locale,sysinfo,,,"en_IN",1281464170409
+processors,sysinfo,,,"4",1281464170409
+java.runtime.name,sysinfo,,,"OpenJDK Runtime Environment",1281464170409
+java.runtime.version,sysinfo,,,"1.6.0_18-b18",1281464170409
+java.specification.name,sysinfo,,,"Java Platform API Specification",1281464170409
+java.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1281464170409
+java.specification.version,sysinfo,,,"1.6",1281464170409
+java.vendor,sysinfo,,,"Sun Microsystems Inc.",1281464170409
+java.version,sysinfo,,,"1.6.0_18",1281464170409
+java.vm.info,sysinfo,,,"mixed mode",1281464170409

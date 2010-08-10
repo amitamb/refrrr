@@ -1,8 +1,0 @@
-<?php
-
-function getMethod()
-{
-	return request();
-}
-
-?>

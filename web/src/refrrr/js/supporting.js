@@ -123,11 +123,13 @@ function getActualUrl(url)
 function getOriginUrl()
 {
 	originUrl = unescape(gup(window.location.toString(), 'o'));
+	
+	return originUrl;
+}
 
-	if (!originUrl || originUrl == "")
-	{
-		originUrl = userSettingsManager.getDefaultOriginUrl();
-	}
+function getSessionId()
+{
+	originUrl = unescape(gup(window.location.toString(), 'id'));
 	
 	return originUrl;
 }

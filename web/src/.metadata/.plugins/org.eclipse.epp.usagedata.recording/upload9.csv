@@ -1,26 +1,26 @@
 what,kind,bundleId,bundleVersion,description,time
-deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280597022364
-activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280597023341
-deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280597024350
-activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280597036734
-activated,view,org.eclipse.php.ui,2.1.1.v20090914-1400,"org.eclipse.php.ui.explorer",1280597038785
-started,bundle,org.eclipse.ltk.ui.refactoring,3.4.100.v20090604,"org.eclipse.ltk.ui.refactoring",1280597039462
-opened,editor,org.eclipse.wst.jsdt.ui,1.0.200.v200905242047,"org.eclipse.wst.jsdt.ui.CompilationUnitEditor",1280597039571
-activated,editor,org.eclipse.wst.jsdt.ui,1.0.200.v200905242047,"org.eclipse.wst.jsdt.ui.CompilationUnitEditor",1280597039760
-deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280597042140
-activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280597140779
-deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280597140838
-activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280597144589
-deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280597144793
-activated,editor,org.eclipse.php.ui,2.1.1.v20090914-1400,"org.eclipse.php.editor",1280597145846
-closed,editor,org.eclipse.wst.jsdt.ui,1.0.200.v200905242047,"org.eclipse.wst.jsdt.ui.CompilationUnitEditor",1280597145846
-activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1280597145932
-activated,view,org.eclipse.php.ui,2.1.1.v20090914-1400,"org.eclipse.php.ui.explorer",1280597146006
-closed,editor,org.eclipse.php.ui,2.1.1.v20090914-1400,"org.eclipse.php.editor",1280597146006
-error,log,,,"Resource is out of sync with the file system: '/refrrr/Hacker_News_files/grayarrow.gif'.",1280597147229
-error,log,,,"Resource is out of sync with the file system: '/refrrr/Hacker_News_files/hnsearch.png'.",1280597147229
-error,log,,,"Resource is out of sync with the file system: '/refrrr/Hacker_News_files/mixpanel_partner_logo_borderless.gif'.",1280597147230
-error,log,,,"Resource is out of sync with the file system: '/refrrr/Hacker_News_files/news.css'.",1280597147230
-error,log,,,"Resource is out of sync with the file system: '/refrrr/Hacker_News_files/propres.html'.",1280597147231
-error,log,,,"Resource is out of sync with the file system: '/refrrr/Hacker_News_files/prowidget.png'.",1280597147231
-error,log,,,"Resource is out of sync with the file system: '/refrrr/Hacker_News_files/s.gif'.",1280597147232
+activated,perspective,org.eclipse.jst.j2ee.ui,,"org.eclipse.jst.j2ee.J2EEPerspective",1281464170354
+started,bundle,org.eclipse.osgi,3.5.1.R35x_v20090827,"org.eclipse.osgi",1281464170355
+started,bundle,org.eclipse.equinox.simpleconfigurator,1.0.101.R35x_v20090807-1100,"org.eclipse.equinox.simpleconfigurator",1281464170355
+started,bundle,com.ibm.icu,4.0.1.v20090822,"com.ibm.icu",1281464170356
+started,bundle,org.eclipse.core.contenttype,3.4.1.R35x_v20090826-0451,"org.eclipse.core.contenttype",1281464170356
+started,bundle,org.eclipse.core.databinding.observable,1.2.0.M20090902-0800,"org.eclipse.core.databinding.observable",1281464170357
+started,bundle,org.eclipse.core.expressions,3.4.100.v20090429-1800,"org.eclipse.core.expressions",1281464170357
+started,bundle,org.eclipse.core.filebuffers,3.5.0.v20090526-2000,"org.eclipse.core.filebuffers",1281464170357
+started,bundle,org.eclipse.core.filesystem,1.2.0.v20090507,"org.eclipse.core.filesystem",1281464170358
+started,bundle,org.eclipse.core.jobs,3.4.100.v20090429-1800,"org.eclipse.core.jobs",1281464170358
+started,bundle,org.eclipse.core.net,1.2.1.r35x_20090812-1200,"org.eclipse.core.net",1281464170358
+started,bundle,org.eclipse.core.resources,3.5.1.R35x_v20090826-0451,"org.eclipse.core.resources",1281464170359
+started,bundle,org.eclipse.core.runtime,3.5.0.v20090525,"org.eclipse.core.runtime",1281464170359
+started,bundle,org.eclipse.core.runtime.compatibility,3.2.0.v20090413,"org.eclipse.core.runtime.compatibility",1281464170360
+started,bundle,org.eclipse.core.runtime.compatibility.auth,3.2.100.v20090413,"org.eclipse.core.runtime.compatibility.auth",1281464170360
+started,bundle,org.eclipse.debug.core,3.5.0.v20090526-1600,"org.eclipse.debug.core",1281464170360
+started,bundle,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui",1281464170361
+started,bundle,org.eclipse.ecf,3.0.0.v20090831-1906,"org.eclipse.ecf",1281464170362
+started,bundle,org.eclipse.ecf.filetransfer,3.0.0.v20090831-1906,"org.eclipse.ecf.filetransfer",1281464170362
+started,bundle,org.eclipse.ecf.identity,3.0.0.v20090831-1906,"org.eclipse.ecf.identity",1281464170362
+started,bundle,org.eclipse.ecf.provider.filetransfer,3.0.1.v20090831-1906,"org.eclipse.ecf.provider.filetransfer",1281464170363
+started,bundle,org.eclipse.ecf.provider.filetransfer.httpclient,3.0.1.v20090831-1906,"org.eclipse.ecf.provider.filetransfer.httpclient",1281464170363
+started,bundle,org.eclipse.emf.common,2.5.0.v200906151043,"org.eclipse.emf.common",1281464170363
+started,bundle,org.eclipse.emf.common.ui,2.5.0.v200906151043,"org.eclipse.emf.common.ui",1281464170363
+started,bundle,org.eclipse.emf.ecore,2.5.0.v200906151043,"org.eclipse.emf.ecore",1281464170363
