@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+error,log,,,"Internal plug-in action delegate error on creation.",1281644095566
+error,log,,,"Could not create action delegate for id: org.eclipse.debug.ui.actions.ToggleLineBreakpoint",1281644095567
+error,log,,,"Internal plug-in action delegate error on creation.",1281644095567
+error,log,,,"Could not create action delegate for id: org.eclipse.debug.ui.actions.ToggleBreakpoint",1281644095568
+error,log,,,"Internal plug-in action delegate error on creation.",1281644095568
+started,bundle,org.eclipse.php.debug.ui,2.1.1.v20090714-1338,"org.eclipse.php.debug.ui",1281644095572
+started,bundle,org.eclipse.jst.servlet.ui,1.1.301.v200908101600,"org.eclipse.jst.servlet.ui",1281644097147
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.jface"".",1281644110905
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281644111027
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281644111099
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.jface"".",1281644111180
+error,log,,,"Unable to create editor ID org.eclipse.php.editor: The editor class could not be instantiated. This usually indicates a missing no-arg constructor or that the editor's class name was mistyped in plugin.xml.",1281644111217
+opened,editor,org.eclipse.php.ui,,"org.eclipse.php.editor",1281644111309
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.ui.workbench"".",1281644111338
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.ui.workbench"".",1281644111345
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.ui.workbench"".",1281644111352
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.ui.workbench"".",1281644111358
+activated,editor,org.eclipse.php.ui,,"org.eclipse.php.editor",1281644111365
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281644112618
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281644112750
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.ui.workbench"".",1281644112756
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.ui.workbench"".",1281644112898
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.ui.workbench"".",1281644112911
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.ui.workbench"".",1281644112920
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.ui.workbench"".",1281644112927

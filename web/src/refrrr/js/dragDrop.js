@@ -124,11 +124,12 @@ function linkDropped(x, y, url)
 	linkDroppedEventHandler(new DropEventData(x, y, url));
 }
 
-function DropEventData(x, y, url)
+function DropEventData(x, y, url, text)
 {
 	this.x = x;
 	this.y = y;
 	this.url = url;
+	this.text = text;
 	
 	// now find on which element this link was drag dropped
 

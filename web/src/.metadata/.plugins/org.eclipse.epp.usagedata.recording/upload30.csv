@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,org.python.pydev.core,1.5.4.2010011921,"org.python.pydev.core",1281644742890
+os,sysinfo,,,"linux",1281644742894
+arch,sysinfo,,,"x86_64",1281644742894
+ws,sysinfo,,,"gtk",1281644742894
+locale,sysinfo,,,"en_IN",1281644742894
+processors,sysinfo,,,"4",1281644742894
+java.runtime.name,sysinfo,,,"OpenJDK Runtime Environment",1281644742894
+java.runtime.version,sysinfo,,,"1.6.0_18-b18",1281644742894
+java.specification.name,sysinfo,,,"Java Platform API Specification",1281644742894
+java.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1281644742894
+java.specification.version,sysinfo,,,"1.6",1281644742894
+java.vendor,sysinfo,,,"Sun Microsystems Inc.",1281644742894
+java.version,sysinfo,,,"1.6.0_18",1281644742894
+java.vm.info,sysinfo,,,"mixed mode",1281644742894
+java.vm.name,sysinfo,,,"OpenJDK 64-Bit Server VM",1281644742894
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1281644742894
+java.vm.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1281644742894
+java.vm.specification.version,sysinfo,,,"1.0",1281644742894
+java.vm.vendor,sysinfo,,,"Sun Microsystems Inc.",1281644742894
+java.vm.version,sysinfo,,,"16.0-b13",1281644742894
+started,bundle,org.eclipse.jst.servlet.ui,1.1.301.v200908101600,"org.eclipse.jst.servlet.ui",1281644743420
+started,bundle,org.eclipse.wst.html.core,1.1.300.v200903120608,"org.eclipse.wst.html.core",1281644743580
+started,bundle,org.eclipse.wst.xml.ui,1.1.1.v200908242115,"org.eclipse.wst.xml.ui",1281644745192
+started,bundle,org.eclipse.wst.html.ui,1.0.401.v200908111935,"org.eclipse.wst.html.ui",1281644745213
+started,bundle,org.eclipse.wst.css.core,1.1.300.v200904131653,"org.eclipse.wst.css.core",1281644745398

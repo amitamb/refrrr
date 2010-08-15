@@ -1,84 +1,3 @@
-/*
-
-function FrameLoadQueue()
-{
-	this.maxQueueLength = 1;
-	
-	this.loading = 0;
-
-	// bad
-	this.loadUrls = Array();
-	this.loadFrames = Array();
-
-	this.addToQueue = function(frame)
-	{
-		this.loadFrames.push(frame);
-		this.loadUrls.push(frame.url);
-				
-		this.processQueue();
-	}
-	
-	this.processQueue = function()
-	{
-		while (this.loading < this.maxQueueLength && this.loadUrls.length > this.loading)
-		{
-			document.title = "Loading: " + this.loadUrls[this.loading];
-			// laod next Element from array
-			
-			// it might be loaded when user clicked on its tab
-			if (this.loadFrames[this.loading].iframeObj.src != this.loadUrls[this.loading])
-			{
-				this.loadFrames[this.loading].iframeObj.src = this.loadUrls[this.loading];
-				this.loadFrames[this.loading].iframeObj.onload = this.frameOnLoad;
-				
-				this.loading++;
-			}
-			else
-			{
-				this.loading++;
-				this.loaded(this.loadUrls[this.loading-1]);
-			}
-		}
-	}
-	
-	this.frameOnLoad = function(event, element)
-	{
-		// here this refers to source element
-		frameLoadQueue.loaded(this.src);
-	}
-	
-	this.loaded = function(url)
-	{
-		document.title = "Loaded : " + url;
-		
-		this.loading--;
-		
-		var indexToRemove = this.loadUrls.indexOf(url);
-		
-		this.loadUrls.splice(indexToRemove, indexToRemove+1);
-		this.loadFrames.splice(indexToRemove, indexToRemove+1);
-		
-		this.processQueue();
-	}
-	
-	this.removed = function(url)
-	{
-		//alert("RemovedUrl : " + url + "removedIndex : " + removedIndex + " \n ");
-		var removedIndex = this.loadUrls.indexOf(url);
-		
-		// if it was loading
-		if (removedIndex != null)
-		if (removedIndex < this.loading)
-		{
-			this.loaded(url);
-		}
-	}
-}
-
-var frameLoadQueue = new FrameLoadQueue();
-
-*/
-
 function Frame(url, iFrameId, backgroundFrame)
 {
 	if (backgroundFrame == null)
@@ -98,7 +17,7 @@ function Frame(url, iFrameId, backgroundFrame)
 	
 	if (backgroundFrame)
 	{
-		newFrame.src = "about:blank";
+		newFrame.src = "loading.htm"; //"about:blank";
 	}
 	else
 	{
@@ -135,6 +54,12 @@ function Frame(url, iFrameId, backgroundFrame)
 		}
 
 		return iFrame;
+	}
+	
+	this.navigateTo = function(newUrl)
+	{
+		this.url = newUrl;
+		this.iframeObj.src = this.url;
 	}
 	
 	this.show = function()
@@ -174,6 +99,13 @@ function Frame(url, iFrameId, backgroundFrame)
 		//frameLoadQueue.removed(this.url);
 		$(this.iframeObj).remove();
 	}
+}
+
+Frame.baseFrame = null;
+
+Frame.addBaseFrame = function()
+{
+	Frame.baseFrame = new Frame("about:blank", "baseFrame", true);
 }
 
 function FrameManager(enableIFrameBusterBuster)
@@ -229,9 +161,15 @@ function FrameManager(enableIFrameBusterBuster)
 			}
 		}
 		
+		Frame.baseFrame.hide();
+		
 		targetFrame.show();
 		
 		this.currentFrontFrame = targetFrame;
+		
+		changeFavIcon(getFaviconUrl(targetFrame.url));
+		changePageTitle(targetFrame.url);
+		$("#statusUrl").val(targetFrame.url);
 	}
 	
 	this.doesFrameContainsIFrameBuster = function(url)
@@ -265,7 +203,6 @@ function FrameManager(enableIFrameBusterBuster)
 		if (!backgroundFrame)
 		{
 			this.bringToFront(frame);
-			$("#statusUrl").val(url);
 		}
 
 		this.setLastLoadedIFrameUrl(url);
@@ -360,4 +297,14 @@ function FrameManager(enableIFrameBusterBuster)
 			  }  
 			}, 1) ;
 	}
+	
+	// Add baseFrame
+	// <iframe name="baseFrame" id="baseFrame" src="about:blank"></iframe>
+	Frame.addBaseFrame();
+	
+	this.showBaseFrame = function()
+	{
+		//Frame.baseFrame.
+		this.bringToFront(Frame.baseFrame);	
+	};
 }

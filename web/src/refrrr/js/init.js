@@ -22,7 +22,7 @@ $(document).ready(function(){
 
 	if (true) //getBrowser() == "chrome")
 	{
-		$("#bottomWhiteSpaceForChrome").css("display", "table-row");
+		//$("#bottomWhiteSpaceForChrome").css("display", "table-row");
 	}
 	
 	if (getBrowser() == "chrome" || getBrowser() == "safari")

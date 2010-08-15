@@ -22,7 +22,34 @@
 
 linkDroppedEventHandler = function(dropEventData)
 {
-	var actualUrl = getActualUrl(dropEventData.url);
+	var url = dropEventData.url;
+	var text = dropEventData.text;
+	var actualUrl = null;
+	if (url == null || url == "")
+	{
+		// try using text
+		if (text == null || text == "")
+		{
+			// this is major problem
+			alert("Drop failed.");
+		}
+		else
+		{
+			if (isUrl(text))
+			{
+				actualUrl = text;
+			}
+			else
+			{
+				actualUrl = userSettingsManager.getSearchUrl(encodeURIComponent(text));
+			}
+		}
+	}
+	else
+	{
+		actualUrl = getActualUrl(url);
+	}
+
 	if (dropEventData.parentElementId == "linksListParent")
 	{
 		var nLink = new Link(actualUrl, frameManager.getCurrentUrl());
@@ -45,6 +72,33 @@ linkDroppedEventHandler = function(dropEventData)
 <div id="crazyOLRight" onmousemove="OLMouseMove(event, this)"  ondrop="fnHandleDrop(event)" ondragover="fnCancelDefault(event)" ondragenter="fnHandleDragEnter(event)" ></div>
 <div id="bodyDiv">
 <table id="topTable">
+	<tr id="bottomWhiteSpaceForChrome">
+		<td id="bottomPrevTd" rowspan="2">
+			<button id="prevButton" onclick="linksManager.prev()"><</button>
+		</td>	
+		<td colspan="2">
+			<a id="sharelink" href="#">Share current tabs</a>
+			&nbsp;
+			<input type="text" id="statusUrl"></input>
+		</td>
+		<td id="bottomNextTd" rowspan="2">
+			<button id="nextButton" onclick="linksManager.next()">></button>
+		</td>
+	</tr>
+	<tr>	
+
+	    <td id="bottomTd">
+			<div id="linksListParentBottom">
+                <!--Tabs should come here-->
+			</div>
+		</td>
+		<td id="bottomRightTd">
+			<a id="viewSessionLink" href="#" target="baseFrame" onclick="frameManager.showBaseFrame();">
+                <img id="rightBottomLogo" src="images/sessin.png" />
+            </a>
+		</td>
+
+	</tr>
 	<tr>
 		<td id="lefttd">
 			<div id="leftDiv">
@@ -54,10 +108,9 @@ linkDroppedEventHandler = function(dropEventData)
 					<table>
 						<tr style="height:20px;">
 							<td id="commonLinksTd">
-								<span id="commonLinksTitle">Common Links ></span><br/>
+								<span id="commonLinksTitle">Common Links</span><br/>
 								<div id="commonLinksParent">
 									<!-- Common links -->
-									
 								</div>
 							</td>
 						</tr>
@@ -100,33 +153,6 @@ linkDroppedEventHandler = function(dropEventData)
 -->
 			</div>
 		</td>
-	</tr>
-	<tr id="bottomWhiteSpaceForChrome">
-		<td id="bottomPrevTd" rowspan="2">
-			<button id="prevButton" onclick="linksManager.prev()">Prev</button>
-		</td>	
-		<td colspan="2">
-			<a id="sharelink" href="#">Share current tabs</a>
-			&nbsp;
-			<input type="text" id="statusUrl"></input>
-		</td>
-		<td id="bottomNextTd" rowspan="2">
-			<button id="nextButton" onclick="linksManager.next()">Next</button>
-		</td>
-	</tr>
-	<tr>	
-
-	    <td id="bottomTd">
-			<div id="linksListParentBottom">
-                <!--Tabs should come here-->
-			</div>
-		</td>
-		<td id="bottomRightTd">
-			<a href="/" target="_blank" onclick="return false;">
-                <img id="rightBottomLogo" src="images/refrrr.png" />
-            </a>
-		</td>
-
 	</tr>
 </table>
 </div>
@@ -199,7 +225,9 @@ function fnHandleDrop(event)
 	x = 0;
 	y = 0;
 	url = oData.getData("URL");
-	linkDroppedEventHandler(new DropEventData(x, y, url));
+	text = oData.getData("Text");
+	
+	linkDroppedEventHandler(new DropEventData(x, y, url, text));
 }
 
 // This function sets the dropEffect when the user moves the 

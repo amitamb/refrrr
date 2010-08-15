@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.goto.lineEnd",1281676522664
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.select.lineStart",1281676522922
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1281676523150
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.select.wordPrevious",1281676530476
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.select.wordPrevious",1281676530712
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.select.wordPrevious",1281676530914
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1281676531597
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1281676532953
+activated,editor,org.eclipse.php.ui,2.1.1.v20090914-1400,"org.eclipse.php.editor",1281676550914
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281676553064
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281676631099
+activated,editor,org.eclipse.wst.jsdt.ui,1.0.200.v200905242047,"org.eclipse.wst.jsdt.ui.CompilationUnitEditor",1281676656269
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.select.lineStart",1281676685132
+no handler,command,org.eclipse.datatools.sqltools.result.ui,,"org.eclipse.datatools.sqltools.result.removeAllInstances",1281676685494
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1281676696359
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.goto.lineEnd",1281676696716
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1281676697365
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1281676705041
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1281676705245
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1281676705534
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281676715745
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281676717489
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281676718797
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281676756795
+activated,editor,org.eclipse.php.ui,2.1.1.v20090914-1400,"org.eclipse.php.editor",1281676768725

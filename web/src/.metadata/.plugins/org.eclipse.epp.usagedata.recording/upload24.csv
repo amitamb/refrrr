@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.ui.workbench"".",1281644117651
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.ui.workbench"".",1281644117657
+activated,editor,org.eclipse.php.ui,,"org.eclipse.php.editor",1281644117663
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281644117676
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281644118606
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.ui.workbench"".",1281644118610
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.ui.workbench"".",1281644118681
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.ui.workbench"".",1281644118690
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.ui.workbench"".",1281644118695
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.ui.workbench"".",1281644118702
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1281644118706
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281644118713
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281644119853
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.refresh",1281644120396
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.refresh",1281644121229
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.jface"".",1281644122883
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281644122917
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281644124236
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281644125897
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.ui.workbench"".",1281644127056
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281644127082
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281644127179
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281644128223
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.ui.workbench"".",1281644132266
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.restartWorkbench",1281644132295

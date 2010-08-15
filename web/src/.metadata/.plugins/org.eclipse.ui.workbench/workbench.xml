@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="48" version="2.0">
+<workbench progressCount="70" version="2.0">
 <workbenchAdvisor/>
 <window height="718" maximized="true" width="1024" x="0" y="25">
 <fastViewData fastViewLocation="1024"/>
@@ -12,26 +12,83 @@
 <coolItem id="additions" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="120" y="30"/>
 <coolItem id="org.eclipse.jst.j2ee.J2eeMainActionSet" itemType="typeToolBarContribution" x="84" y="30"/>
-<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="104" y="30"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="76" y="30"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="40" y="30"/>
 <coolItem id="org.eclipse.wst.server.ui.internal.webbrowser.actionSet" itemType="typeToolBarContribution" x="40" y="30"/>
+<coolItem id="org.eclipse.wst.web.ui.wizardsActionSet" itemType="typeToolBarContribution" x="96" y="30"/>
 <coolItem id="org.eclipse.wst.ws.explorer.explorer" itemType="typeToolBarContribution" x="40" y="30"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="184" y="30"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.wst.css.core.csssource.source" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.php.editor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.html.core.htmlsource.source" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
-<page focus="true" label="Workspace - Java EE">
+<page aggregateWorkingSetId="Aggregate for window 1281644801235" focus="true" label="Workspace - Web">
 <editors>
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
+<part id="8"/>
+<part id="9"/>
+</presentation>
 </folder>
 </info>
 </editorArea>
+<editor id="org.eclipse.wst.css.core.csssource.source" name="reader.css" partName="reader.css" path="/home/amit/refrrr/web/src/refrrr/reader.css" title="reader.css" tooltip="refrrr/reader.css" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/refrrr/reader.css"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4086" selectionTopPixel="1721"/>
+</editor>
+<editor id="org.eclipse.php.editor" name="view.php" partName="view.php" path="/home/amit/refrrr/web/src/refrrr/view.php" title="view.php" tooltip="refrrr/view.php" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/refrrr/view.php"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="388" selectionTopPixel="799"/>
+</editor>
+<editor id="org.eclipse.php.editor" name="getSessionById.php" partName="getSessionById.php" path="/home/amit/refrrr/web/src/refrrr/getSessionById.php" title="getSessionById.php" tooltip="refrrr/getSessionById.php" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/refrrr/getSessionById.php"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="183" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="SessionData.js" partName="SessionData.js" path="/home/amit/refrrr/web/src/refrrr/js/SessionData.js" title="SessionData.js" tooltip="refrrr/js/SessionData.js" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/refrrr/js/SessionData.js"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1818" selectionTopPixel="1348"/>
+</editor>
+<editor id="org.eclipse.php.editor" name="shareTabs.php" partName="shareTabs.php" path="/home/amit/refrrr/web/src/refrrr/shareTabs.php" title="shareTabs.php" tooltip="refrrr/shareTabs.php" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/refrrr/shareTabs.php"/>
+<editorState selectionHorizontalPixel="0" selectionLength="383" selectionOffset="171" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.php.editor" name="Session.php" partName="Session.php" path="/home/amit/refrrr/web/src/refrrr/collections/Session.php" title="Session.php" tooltip="refrrr/collections/Session.php" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/refrrr/collections/Session.php"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="590" selectionTopPixel="547"/>
+</editor>
+<editor id="org.eclipse.php.editor" name="reader.php" partName="reader.php" path="/home/amit/refrrr/web/src/refrrr/reader.php" title="reader.php" tooltip="refrrr/reader.php" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/refrrr/reader.php"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2182" selectionTopPixel="655"/>
+</editor>
+<editor id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="FrameManager.js" partName="FrameManager.js" path="/home/amit/refrrr/web/src/refrrr/js/FrameManager.js" title="FrameManager.js" tooltip="refrrr/js/FrameManager.js" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/refrrr/js/FrameManager.js"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="7649" selectionTopPixel="4861"/>
+</editor>
+<editor id="org.eclipse.wst.html.core.htmlsource.source" name="loading.htm" partName="loading.htm" path="/home/amit/refrrr/web/src/refrrr/loading.htm" title="loading.htm" tooltip="refrrr/loading.htm" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/refrrr/loading.htm"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="68" selectionTopPixel="0"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="LinksManager.js" partName="LinksManager.js" path="/home/amit/refrrr/web/src/refrrr/js/LinksManager.js" title="LinksManager.js" tooltip="refrrr/js/LinksManager.js" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/refrrr/js/LinksManager.js"/>
+<editorState selectionHorizontalPixel="0" selectionLength="16" selectionOffset="7661" selectionTopPixel="6251"/>
+</editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
@@ -39,6 +96,8 @@
 </view>
 <view id="org.eclipse.ui.views.AllMarkersView" partName="Markers">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.allSeverityField" categoryGroup="org.eclipse.ui.ide.type" markerContentGenerator="org.eclipse.ui.ide.allMarkersGenerator" partName="Markers">
+<expanded>&#x0A;<category IMemento.internal.id="PHP Task (1 item)"/>
+</expanded>
 <columnWidths org.eclipse.ui.ide.allSeverityField="350" org.eclipse.ui.ide.locationField="73" org.eclipse.ui.ide.markerType="417" org.eclipse.ui.ide.pathField="143" org.eclipse.ui.ide.resourceField="108"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.allSeverityField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -49,6 +108,19 @@
 </view>
 <view id="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" partName="Snippets"/>
 <view id="org.eclipse.ui.views.PropertySheet" partName="Properties"/>
+<view id="org.eclipse.ui.views.ProblemView" partName="Problems">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>
+<category IMemento.internal.id="Warnings (9 items)"/>
+</expanded>
+<columnWidths org.eclipse.ui.ide.locationField="73" org.eclipse.ui.ide.markerType="260" org.eclipse.ui.ide.pathField="143" org.eclipse.ui.ide.resourceField="108" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+</viewState>
+</view>
 <view id="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" partName="Data Source Explorer"/>
 <view id="org.eclipse.mylyn.tasks.ui.views.tasks" partName="Task List"/>
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
@@ -56,7 +128,7 @@
 </view>
 <view id="org.eclipse.wst.server.ui.ServersView" partName="Servers"/>
 </views>
-<perspectives activePart="org.eclipse.ui.navigator.ProjectExplorer" activePerspective="org.eclipse.jst.j2ee.J2EEPerspective">
+<perspectives activePart="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.wst.web.ui.webDevPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jst.j2ee.internal.perspective.J2EEPerspective" id="org.eclipse.jst.j2ee.J2EEPerspective" label="Java EE"/>
 <alwaysOnActionSet id="org.eclipse.jst.servlet.ui.internal.actions.ConvertToWebModuleTypeActionSet"/>
@@ -122,31 +194,22 @@
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.mylyn.tasks.ui.views.tasks"/>
 <fastViewBars/>
-<layout>
-<mainWindow>
-<info folder="true" part="topLeft">
-<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">
-<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="topLeft">&#x0A;<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.PackagesView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@4c5e43ee" ratio="0.7495049" ratioLeft="757" ratioRight="253" relationship="2" relative="topLeft">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@4c5e43ee" ratio="0.7495049" ratioLeft="757" ratioRight="253" relationship="2" relative="topLeft">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.24950495" ratioLeft="252" ratioRight="758" relationship="2" relative="topLeft"/>
-<info folder="true" part="bottomRight" ratio="0.6984668" ratioLeft="410" ratioRight="177" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.AllMarkersView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.AllMarkersView" label="Markers"/>
+<info folder="true" part="bottomRight" ratio="0.6984668" ratioLeft="410" ratioRight="177" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.AllMarkersView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.AllMarkersView" label="Markers"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
 <page content="org.eclipse.wst.server.ui.ServersView" label="Servers"/>
 <page content="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" label="Data Source Explorer"/>
@@ -157,8 +220,7 @@
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
@@ -166,13 +228,102 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="topRight" ratio="0.69920844" ratioLeft="530" ratioRight="228" relationship="2" relative="org.eclipse.ui.editorss">
+<info folder="true" part="topRight" ratio="0.69920844" ratioLeft="530" ratioRight="228" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="org.eclipse.mylyn.tasks.ui.views.tasks" label="Task List"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.eclipse.wst.web.ui.internal.WebDevelopmentPerspective" id="org.eclipse.wst.web.ui.webDevPerspective" label="Web"/>
+<alwaysOnActionSet id="org.eclipse.jst.servlet.ui.internal.actions.ConvertToWebModuleTypeActionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.doc.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.tasks.ui.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.rse.core.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.team.svn.ui.menu.help"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.wst.web.ui.wizardsActionSet"/>
+<alwaysOnActionSet id="org.eclipse.wst.server.ui.internal.webbrowser.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="org.eclipse.wst.ws.explorer.explorer"/>
+<show_view_action id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.views.PropertySheet"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="org.eclipse.wst.server.ui.ServersView"/>
+<new_wizard_action id="org.eclipse.wst.web.ui.internal.wizards.SimpleWebProjectWizard"/>
+<new_wizard_action id="org.eclipse.jst.servlet.ui.project.facet.WebProjectWizard"/>
+<new_wizard_action id="org.eclipse.wst.css.ui.internal.wizard.NewCSSWizard"/>
+<new_wizard_action id="org.eclipse.wst.html.ui.internal.wizard.NewHTMLWizard"/>
+<new_wizard_action id="org.eclipse.wst.jsdt.ui.NewJSWizard"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.folder"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.file"/>
+<perspective_action id="org.eclipse.jst.j2ee.J2EEPerspective"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="org.eclipse.wst.common.snippets.internal.ui.SnippetsView"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
+<view id="org.eclipse.wst.server.ui.ServersView"/>
+<view id="org.eclipse.ui.views.PropertySheet"/>
+<fastViewBars/>
+<layout>
+<mainWindow>
+<info folder="true" part="topLeft">
+<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">
+<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1014" ratioRight="338" relationship="2" relative="topLeft">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.17716828" ratioLeft="239" ratioRight="1110" relationship="2" relative="topLeft"/>
+<info folder="true" part="topRight" ratio="0.7998028" ratioLeft="811" ratioRight="203" relationship="2" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
-<page content="org.eclipse.mylyn.tasks.ui.views.tasks" label="Task List"/>
+<page content="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" label="Snippets"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="bottom" ratio="0.6993243" ratioLeft="414" ratioRight="178" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<page content="org.eclipse.wst.server.ui.ServersView" label="Servers"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
+<page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.TaskList" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
 </presentation>
 </folder>
 </info>
@@ -181,7 +332,171 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/refrrr/getSessionById.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" path="/refrrr/js/SessionData.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/refrrr/view.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/refrrr/reader.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" path="/refrrr/js/FrameManager.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/refrrr/loading.htm"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/refrrr/getSessionById.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/refrrr/reader.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/refrrr/getSessionById.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" path="/refrrr/js/LinksManager.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.css.core.csssource.source" path="/refrrr/reader.css"/>
+</editors>
+<item historyLabel="SessionData.js" index="1">
+<position info="not_deleted" x="1776" y="0"/>
+</item>
+<item historyLabel="SessionData.js" index="1">
+<position info="not_deleted" x="1775" y="0"/>
+</item>
+<item historyLabel="view.php" index="2">
+<position info="not_deleted" x="388" y="0"/>
+</item>
+<item historyLabel="reader.php" index="3">
+<position info="not_deleted" x="3960" y="0"/>
+</item>
+<item historyLabel="SessionData.js" index="1">
+<position info="not_deleted" x="1775" y="0"/>
+</item>
+<item historyLabel="FrameManager.js" index="4">
+<position info="not_deleted" x="4709" y="0"/>
+</item>
+<item historyLabel="SessionData.js" index="1">
+<position info="not_deleted" x="1775" y="0"/>
+</item>
+<item historyLabel="reader.php" index="3">
+<position info="not_deleted" x="3960" y="0"/>
+</item>
+<item historyLabel="SessionData.js" index="1">
+<position info="not_deleted" x="1839" y="0"/>
+</item>
+<item historyLabel="reader.php" index="3">
+<position info="not_deleted" x="3936" y="15"/>
+</item>
+<item historyLabel="FrameManager.js" index="4">
+<position info="not_deleted" x="4709" y="0"/>
+</item>
+<item historyLabel="reader.php" index="3">
+<position info="not_deleted" x="3936" y="15"/>
+</item>
+<item historyLabel="SessionData.js" index="1">
+<position info="not_deleted" x="1839" y="0"/>
+</item>
+<item historyLabel="SessionData.js" index="1">
+<position info="not_deleted" x="1818" y="0"/>
+</item>
+<item historyLabel="SessionData.js" index="1">
+<position info="not_deleted" x="1788" y="0"/>
+</item>
+<item historyLabel="SessionData.js" index="1">
+<position info="not_deleted" x="1818" y="0"/>
+</item>
+<item historyLabel="FrameManager.js" index="4">
+<position info="not_deleted" x="4709" y="0"/>
+</item>
+<item historyLabel="FrameManager.js" index="4">
+<position/>
+</item>
+<item historyLabel="loading.htm" index="5">
+<position/>
+</item>
+<item historyLabel="reader.php" index="3">
+<position info="not_deleted" x="3936" y="15"/>
+</item>
+<item historyLabel="SessionData.js" index="1">
+<position info="not_deleted" x="1818" y="0"/>
+</item>
+<item historyLabel="getSessionById.php" index="0">
+<position info="not_deleted" x="8" y="171"/>
+</item>
+<item historyLabel="view.php" index="2">
+<position info="not_deleted" x="388" y="0"/>
+</item>
+<item historyLabel="getSessionById.php" index="0">
+<position info="not_deleted" x="8" y="171"/>
+</item>
+<item historyLabel="SessionData.js" index="1">
+<position info="not_deleted" x="1818" y="0"/>
+</item>
+<item historyLabel="reader.php" index="3">
+<position info="not_deleted" x="3936" y="15"/>
+</item>
+<item historyLabel="FrameManager.js" index="4">
+<position info="not_deleted" x="7656" y="0"/>
+</item>
+<item historyLabel="FrameManager.js" index="4">
+<position/>
+</item>
+<item historyLabel="getSessionById.php" index="6">
+<position info="not_deleted" x="8" y="171"/>
+</item>
+<item historyLabel="reader.php" index="7">
+<position/>
+</item>
+<item historyLabel="getSessionById.php" index="8">
+<position info="not_deleted" x="8" y="171"/>
+</item>
+<item historyLabel="LinksManager.js" index="9">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="reader.css" index="10">
+<position info="not_deleted" x="4821" y="0"/>
+</item>
+<item historyLabel="reader.php" index="7">
+<position info="not_deleted" x="1950" y="0"/>
+</item>
+<item historyLabel="LinksManager.js" index="9">
+<position info="not_deleted" x="1684" y="0"/>
+</item>
+<item historyLabel="reader.css" index="10">
+<position info="not_deleted" x="1865" y="0"/>
+</item>
+<item historyLabel="reader.php" index="7">
+<position info="not_deleted" x="1950" y="0"/>
+</item>
+<item historyLabel="LinksManager.js" index="9">
+<position info="not_deleted" x="1761" y="0"/>
+</item>
+<item historyLabel="getSessionById.php" index="8">
+<position/>
+</item>
+<item historyLabel="reader.css" index="10">
+<position info="not_deleted" x="4088" y="0"/>
+</item>
+<item historyLabel="LinksManager.js" index="9">
+<position info="not_deleted" x="1338" y="0"/>
+</item>
+<item historyLabel="reader.php" index="7">
+<position info="not_deleted" x="1889" y="10"/>
+</item>
+<item historyLabel="reader.css" index="10">
+<position info="not_deleted" x="4777" y="0"/>
+</item>
+<item historyLabel="reader.php" index="7">
+<position info="not_deleted" x="2182" y="0"/>
+</item>
+<item historyLabel="reader.css" index="10">
+<position info="not_deleted" x="4750" y="0"/>
+</item>
+<item historyLabel="LinksManager.js" index="9">
+<position info="not_deleted" x="1338" y="0"/>
+</item>
+<item historyLabel="reader.css" index="10">
+<position info="not_deleted" x="4750" y="0"/>
+</item>
+<item historyLabel="LinksManager.js" index="9">
+<position info="not_deleted" x="1338" y="0"/>
+</item>
+<item historyLabel="reader.css" index="10">
+<position info="not_deleted" x="4086" y="0"/>
+</item>
+<item active="true" historyLabel="LinksManager.js" index="9">
+<position info="not_deleted" x="1338" y="0"/>
+</item>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -197,5 +512,51 @@
 </trimArea>
 </trimLayout>
 </window>
-<mruList/>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="LinksManager.js" tooltip="refrrr/js/LinksManager.js">
+<persistable path="/refrrr/js/LinksManager.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="loading.htm" tooltip="refrrr/loading.htm">
+<persistable path="/refrrr/loading.htm"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="FrameManager.js" tooltip="refrrr/js/FrameManager.js">
+<persistable path="/refrrr/js/FrameManager.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="reader.php" tooltip="refrrr/reader.php">
+<persistable path="/refrrr/reader.php"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="Session.php" tooltip="refrrr/collections/Session.php">
+<persistable path="/refrrr/collections/Session.php"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="shareTabs.php" tooltip="refrrr/shareTabs.php">
+<persistable path="/refrrr/shareTabs.php"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="SessionData.js" tooltip="refrrr/js/SessionData.js">
+<persistable path="/refrrr/js/SessionData.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="Communicator.js" tooltip="refrrr/js/Communicator.js">
+<persistable path="/refrrr/js/Communicator.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="getSessionById.php" tooltip="refrrr/getSessionById.php">
+<persistable path="/refrrr/getSessionById.php"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="getSessionByUrl.php" tooltip="refrrr/getSessionByUrl.php">
+<persistable path="/refrrr/getSessionByUrl.php"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="viewSession.php" tooltip="refrrr/viewSession.php">
+<persistable path="/refrrr/viewSession.php"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.css.core.csssource.source" name="reader.css" tooltip="refrrr/reader.css">
+<persistable path="/refrrr/reader.css"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="UserSettingsManager.js" tooltip="refrrr/js/UserSettingsManager.js">
+<persistable path="/refrrr/js/UserSettingsManager.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="supporting.js" tooltip="refrrr/js/supporting.js">
+<persistable path="/refrrr/js/supporting.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="init.js" tooltip="refrrr/js/init.js">
+<persistable path="/refrrr/js/init.js"/>
+</file>
+</mruList>
 </workbench>

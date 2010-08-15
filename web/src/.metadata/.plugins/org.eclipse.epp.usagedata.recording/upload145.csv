@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+os,sysinfo,,,"linux",1281798107239
+arch,sysinfo,,,"x86_64",1281798107239
+ws,sysinfo,,,"gtk",1281798107239
+locale,sysinfo,,,"en_IN",1281798107239
+processors,sysinfo,,,"4",1281798107239
+java.runtime.name,sysinfo,,,"OpenJDK Runtime Environment",1281798107239
+java.runtime.version,sysinfo,,,"1.6.0_18-b18",1281798107239
+java.specification.name,sysinfo,,,"Java Platform API Specification",1281798107239
+java.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1281798107239
+java.specification.version,sysinfo,,,"1.6",1281798107239
+java.vendor,sysinfo,,,"Sun Microsystems Inc.",1281798107239
+java.version,sysinfo,,,"1.6.0_18",1281798107239
+java.vm.info,sysinfo,,,"mixed mode",1281798107239
+java.vm.name,sysinfo,,,"OpenJDK 64-Bit Server VM",1281798107239
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1281798107239
+java.vm.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1281798107239
+java.vm.specification.version,sysinfo,,,"1.0",1281798107239
+java.vm.vendor,sysinfo,,,"Sun Microsystems Inc.",1281798107239
+java.vm.version,sysinfo,,,"16.0-b13",1281798107239
+started,bundle,org.eclipse.wst.wsdl.validation,1.1.401.v200902271605,"org.eclipse.wst.wsdl.validation",1281798107354
+started,bundle,org.eclipse.mylyn.commons.ui,3.2.2.v20090912-0400-e3x,"org.eclipse.mylyn.commons.ui",1281798107506
+started,bundle,org.eclipse.mylyn.bugzilla.core,3.2.2.v20090912-0400-e3x,"org.eclipse.mylyn.bugzilla.core",1281798107619
+started,bundle,org.eclipse.mylyn.bugzilla.ui,3.2.2.v20090912-0400-e3x,"org.eclipse.mylyn.bugzilla.ui",1281798107655
+started,bundle,org.eclipse.mylyn.context.core,3.2.2.v20090912-0400-e3x,"org.eclipse.mylyn.context.core",1281798107762
+started,bundle,org.eclipse.mylyn.context.ui,3.2.2.v20090912-0400-e3x,"org.eclipse.mylyn.context.ui",1281798107769

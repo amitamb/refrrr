@@ -39,7 +39,10 @@ function showStatusMessage(message)
 // gives hostname part of url
 function getHostname(str) {
 	var re = new RegExp('^(?:f|ht)tp(?:s)?\://([^/]+)', 'im');
-	return str.match(re)[1].toString();
+	var t = str.match(re)[1];
+//	if (t == null)
+//		return null;
+	return t.toString();
 }
 
 function getTitleForUrl(url, callback, linksManagerObj)
@@ -95,6 +98,11 @@ function gup( url,  name )
     return results[1];
 }
 
+function isUrl(s) {
+	var regexp = /(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/
+	return regexp.test(s);
+}
+
 function getActualUrl(url)
 {
 	var urlParamValue = gup(url, "url");
@@ -109,13 +117,12 @@ function getActualUrl(url)
 
 	if (urlParamValue == "")
 	{
-		if (url.indexOf("google")!= -1 && url.indexOf("/url?q=") != -1)
-		{
-		}
 		return url;
 	}
 	else
 	{
+		// check if it is valid url
+		if (isUrl(urlPa))
 		return decodeURIComponent(urlParamValue);
 	}
 }
@@ -132,4 +139,23 @@ function getSessionId()
 	originUrl = unescape(gup(window.location.toString(), 'id'));
 	
 	return originUrl;
+}
+
+function changeFavIcon(href, type)
+{
+	if (type == undefined || type == null)
+	{
+		type = "image/x-icon";
+	}
+	
+	var link = document.createElement('link');
+    link.type = type;
+    link.rel = 'shortcut icon';
+    link.href = href;
+    document.getElementsByTagName('head')[0].appendChild(link);
+}
+
+function changePageTitle(newTitle)
+{
+	document.title = newTitle;
 }

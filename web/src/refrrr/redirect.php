@@ -13,6 +13,6 @@ if ($queryString != "")
 
 //print $finalUrl;
 
-header("location:http://www.refrrr.com/reader?o=".urlencode($finalUrl));
+header("location:http://www.sess.in/reader?o=".urlencode($finalUrl));
 
 ?>

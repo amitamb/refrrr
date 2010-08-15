@@ -92,6 +92,10 @@ function initAll(offlineMode, session)
 			showTabLinks(session);
 			
 			setShareLink(session);
+			
+			// set view link
+			$("#viewSessionLink").attr("href", "view.php?_id="+session._id);
+			//view.php?_id=
 		}
 	}
 }

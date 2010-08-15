@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1281644112933
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281644112943
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281644113535
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.ui.workbench"".",1281644115134
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.ui.workbench"".",1281644115163
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.ui.workbench"".",1281644115171
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.ui.workbench"".",1281644115178
+activated,editor,org.eclipse.php.ui,,"org.eclipse.php.editor",1281644115186
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.ui.workbench"".",1281644115214
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.ui.workbench"".",1281644115252
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.ui.workbench"".",1281644115260
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.ui.workbench"".",1281644115288
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.ui.workbench"".",1281644115294
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1281644115301
+closed,editor,org.eclipse.php.ui,,"org.eclipse.php.editor",1281644115302
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281644115315
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281644115346
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281644115357
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281644116398
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.jface"".",1281644117550
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.jface"".",1281644117591
+error,log,,,"Unable to create editor ID org.eclipse.php.editor: The editor class could not be instantiated. This usually indicates a missing no-arg constructor or that the editor's class name was mistyped in plugin.xml.",1281644117612
+opened,editor,org.eclipse.php.ui,,"org.eclipse.php.editor",1281644117630
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.ui.workbench"".",1281644117639
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.ui.workbench"".",1281644117644

@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+error,log,,,"Unexpected runtime error while computing a text hover",1281810864289
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.copy",1281810864725
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.findReplace",1281810865255
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281810865277
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1281810865642
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281810867475
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281810876670
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281810933637
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281810934033
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281811012297
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281811012757
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281811190240
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281811190768
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281811489786
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281811490316
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281811496631
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281811497400
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281811497952
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281811498417
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281812702976
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281812703405
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281812706072
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281812706645
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281812712361
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281812713744

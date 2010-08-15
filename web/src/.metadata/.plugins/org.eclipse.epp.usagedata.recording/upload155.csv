@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1281799879033
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1281799883097
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1281799884234
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281799884645
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281799887464
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.goto.wordPrevious",1281799888715
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.goto.wordPrevious",1281799889081
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1281799889691
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1281799891653
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281799892291
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281800339495
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281800357223
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281800389594
+activated,editor,org.eclipse.wst.jsdt.ui,1.0.200.v200905242047,"org.eclipse.wst.jsdt.ui.CompilationUnitEditor",1281800394638
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281800446255
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281800563524
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281800564491
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281810815716
+started,bundle,org.eclipse.compare,3.5.0.I20090514-0808,"org.eclipse.compare",1281810823353
+error,log,,,"Unexpected runtime error while computing a text hover",1281810835762
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.copy",1281810836270
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.findReplace",1281810836758
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281810836772
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1281810837188
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281810839091

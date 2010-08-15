@@ -1,0 +1,25 @@
+<?php
+require_once('collections/User.php');
+
+$isLoggedIn = User::isLoggedIn(); 
+
+?>
+
+<img src="images/refrrr.png"> <br />
+
+<?php 
+
+if ($isLoggedIn)
+{
+	User::showLogoutButton();
+}
+else
+{
+	User::showLogin();
+	User::showRegister();
+}
+
+?>
+
+Go to <a href="reader.htm">Reader</a>
+

@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+java.runtime.name,sysinfo,,,"OpenJDK Runtime Environment",1281644094760
+java.runtime.version,sysinfo,,,"1.6.0_18-b18",1281644094760
+java.specification.name,sysinfo,,,"Java Platform API Specification",1281644094760
+java.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1281644094760
+java.specification.version,sysinfo,,,"1.6",1281644094760
+java.vendor,sysinfo,,,"Sun Microsystems Inc.",1281644094760
+java.version,sysinfo,,,"1.6.0_18",1281644094760
+java.vm.info,sysinfo,,,"mixed mode",1281644094760
+java.vm.name,sysinfo,,,"OpenJDK 64-Bit Server VM",1281644094760
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1281644094760
+java.vm.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1281644094760
+java.vm.specification.version,sysinfo,,,"1.0",1281644094760
+java.vm.vendor,sysinfo,,,"Sun Microsystems Inc.",1281644094760
+java.vm.version,sysinfo,,,"16.0-b13",1281644094760
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281644094765
+started,bundle,org.eclipse.update.core,3.2.300.v20090525,"org.eclipse.update.core",1281644094774
+started,bundle,org.eclipse.wst.ws.service.policy.ui,1.0.102.v200903070248,"org.eclipse.wst.ws.service.policy.ui",1281644094794
+started,bundle,org.eclipse.php.debug.daemon,2.1.1.v20090707-1108,"org.eclipse.php.debug.daemon",1281644094830
+started,bundle,org.eclipse.mylyn.monitor.ui,3.2.2.v20090912-0400-e3x,"org.eclipse.mylyn.monitor.ui",1281644094945
+started,bundle,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui",1281644095138
+started,bundle,org.eclipse.php.server.core,2.1.1.v20090707-1108,"org.eclipse.php.server.core",1281644095140
+started,bundle,org.eclipse.php.debug.core,2.1.1.v20090914-1400,"org.eclipse.php.debug.core",1281644095257
+error,log,,,"Could not create action delegate for id: org.eclipse.debug.ui.actions.ToggleWatchpoint",1281644095564
+error,log,,,"Internal plug-in action delegate error on creation.",1281644095565
+error,log,,,"Could not create action delegate for id: org.eclipse.debug.ui.actions.ToggleMethodBreakpoint",1281644095566

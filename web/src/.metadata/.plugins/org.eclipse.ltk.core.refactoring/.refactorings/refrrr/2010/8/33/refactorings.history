@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;refrrr/viewSession.php&apos; to &apos;view.php&apos;" description="Rename resource &apos;viewSession.php&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="viewSession.php" name="view.php" stamp="1281669963296" updateReferences="true"/>
+</session>

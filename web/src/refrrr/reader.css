@@ -1,4 +1,4 @@
-*{margin:0px;padding:0px;}
+*{margin:0px;padding:0px;cursor:default;}
 table,td,tr{padding:0px;margin:0px;}
 
 body{width:100%;height:100%;font-family:"lucida grande",tahoma,verdana,arial,sans-serif;font-size:11px;color:#333;overflow:hidden;}
@@ -48,7 +48,8 @@ body{width:100%;height:100%;font-family:"lucida grande",tahoma,verdana,arial,san
 div.link{font-size:14px;padding:2px;border:1px thin; display:block;width:100%;position:relative;}
 */
 
-div.blink{background-color:#F6CECE;}
+div.blink{background-color:#bb6666;}
+/*background-color:#F6CECE;*/
 
 div.link>a, div.link>a:link, div.link>a:visited {text-decoration:none; color:black; cursor:default; outline-style:none;}
 div.link>a:hover, div.link>a:focus {outline-style:none;}
@@ -96,7 +97,8 @@ span.commonLinkFavicon img{border:0px;border-style:none;width:16px;height:16px;}
 #bottomTd{height:30px;overflow:hidden;padding:0px;margin:0px;border:0px solid;background-color:#F3F9FF;}
 #linksListParentBottom{padding:0px;margin:0px;width:100%;height:100%;}
 
-div.link{font-size:14px;padding:2px;padding-top:4px;padding-bottom:4px;border-bottom-width:0px;border-left-width:0px;border-top-width:1px;border-right-width:1px;border-style:outset;margin:0px; display:inline-block;width:200px;position:relative;background-color:#F3F9FF;}
+div.link{font-size:14px;padding:2px;padding-top:4px;padding-bottom:4px;border-bottom-width:0px;border-left-width:0px;border-top-width:1px;border-right-width:1px;border-style:outset;margin:0px; display:inline-block;width:200px;position:relative;}
+/*background-color:#F3F9FF;*/
 
 #bottomRightTd {width:0px;width:30px;background-color:#F3F9FF;}
 #bottomRightTd a {padding:0px;margin:0px;height:20px;cursor:default;outline-style:none;text-decoration:none;}
@@ -112,8 +114,8 @@ div.link{font-size:14px;padding:2px;padding-top:4px;padding-bottom:4px;border-bo
 #sharelink{font-size:80%;tect-decoration:none;color:#555;}
 #statusUrl{font-size:80%;float:right;opacity:0.9;width:50%;border:0px;background-color:transparent;text-align:right;}
 
-#bottomPrevTd{width:35px;}
-#bottomNextTd{width:35px;}
+#bottomPrevTd{width:15px;}
+#bottomNextTd{width:15px;}
 
-#prevButton{width:100%;height:100%;}
-#nextButton{width:100%;height:100%;}
+#prevButton{height:40px;width:20px;}/*width:100%;height:100%;}*/
+#nextButton{height:40px;width:20px;}/*width:100%;height:100%;}*/
