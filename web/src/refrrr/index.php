@@ -15,7 +15,10 @@
 		<!-- PUT MASTHEAD CODE HERE -->
 		<img id="topLogo" src="images/sessin.png" />
 		<h2>Share, save and organize your web sessions.</h2>
-		<div id="mainTip"><img src="images/tip.jpg" /><span id="message">Remember don't click, just drag <a href="#" onclick="return false;">links</a></span></div>
+		<!--
+		alert('ex');
+		-->
+		<div id="mainTip"><img src="images/tip.jpg" /><span id="message">Remember don't click, just drag <a href="#" onclick="return false;">links</a><br /><a id="exampleLink" href="#" onclick="return false;" onmouseover="document.getElementById('dragDemo').style.display = 'inline';" onmouseout="document.getElementById('dragDemo').style.display = 'none';">See Example</a><br /><img id="dragDemo" src="images/dragDemo.gif" /></span></div>
 		<br />
 		<br />
 		<br />

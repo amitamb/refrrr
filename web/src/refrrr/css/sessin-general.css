@@ -6,7 +6,9 @@ h2{font-size:23px;padding:0px;margin:10px;}
 #mainTip{font-size:23px;border:1px dotted;display:inline-block;vertical-align:middle;}
 #mainTip img{float:left;margin:20px;margin-right:0px;}
 #mainTip #message{float:left;height:32px;padding:25px;}
-#mainTip #message a{text-decoration:none;color:}
+#mainTip #message a{text-decoration:none;}
+#mainTip #exampleLink{color:#999;font-size:90%;}
+#dragDemo{float:right;display:none;border:1px solid;background-color:red;position:relative;top:-20px;}
 
 #startSessionNavig{font-size:20px;width:100%;border:1px solid #888;padding:30px;}
 #startSessionNavig input,button{height:30px;}
