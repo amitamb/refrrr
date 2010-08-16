@@ -374,7 +374,15 @@ function LinksManager(linksListParentId, staticTopLink)
 		
 		this.addLinkDivIdToMap(url, linkDivId);
 
-		var text = "<div id='" + linkDivId + "' class='link'\">";
+		var text = "";
+		if (getBrowser() == "ie")
+		{
+			text = text + "<div id='" + linkDivId + "' class='link displayInline'\">";
+		}
+		else
+		{
+			text = text + "<div id='" + linkDivId + "' class='link'\">";
+		}
 		text = text + "<a href='" + url + "' title='" + tooltipText + "' target='_blank'>";
 		text = text + "<table><tr><td rowspan='2'>";
 		text = text + "<div class='linkIcon'><img src='"+faviconUrl+"' alt=' ' /></div>";
