@@ -1,0 +1,15 @@
+*{margin:0px;padding:0px;}
+body{color:#333;}
+#topLogo{padding:3px;}
+h2{font-size:23px;padding:0px;margin:10px;}
+
+#mainTip{font-size:23px;border:1px dotted;display:inline-block;vertical-align:middle;}
+#mainTip img{float:left;margin:20px;margin-right:0px;}
+#mainTip #message{float:left;height:32px;padding:25px;}
+#mainTip #message a{text-decoration:none;color:}
+
+#startSessionNavig{font-size:20px;width:100%;border:1px solid #888;padding:30px;}
+#startSessionNavig input,button{height:30px;}
+#startSessionNavig #o{width:400px;}
+#startSessionNavig button{width:70px;}
+

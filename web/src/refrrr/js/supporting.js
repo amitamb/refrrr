@@ -131,6 +131,11 @@ function getOriginUrl()
 {
 	originUrl = unescape(gup(window.location.toString(), 'o'));
 	
+	if (!isUrl(originUrl))
+	{
+		originUrl = userSettingsManager.getSearchUrl(originUrl);
+	}
+	
 	return originUrl;
 }
 

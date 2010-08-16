@@ -109,7 +109,7 @@ div.displayInline{display:inline;}
  background-color:#F3F9FF;
  */
 
-#bottomWhiteSpaceForChrome {display:none;}
+#bottomWhiteSpaceForChrome {}/*display:none;*/
 #bottomWhiteSpaceForChrome td {height:10px;background-color:#d2e1f6;} /*background-color:#d2e1f6;background-color:#004d89;*/
 
 #sharelink{font-size:80%;tect-decoration:none;color:#555;}
