@@ -13,7 +13,7 @@ Use following link to share tabs
 
 <br />
 <h2>
-<a href="/reader.php?id=<?php echo $sharedSession[ID]; ?>">http://sess.in/reader.php?id=<?php echo $sharedSession[ID]; ?></a>
+<a href="reader.php?id=<?php echo $sharedSession[ID]; ?>">Use this link</a>
 </h2>
 <br />
 It contains following links

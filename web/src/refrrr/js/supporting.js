@@ -122,7 +122,6 @@ function getActualUrl(url)
 	else
 	{
 		// check if it is valid url
-		if (isUrl(urlPa))
 		return decodeURIComponent(urlParamValue);
 	}
 }
@@ -131,7 +130,7 @@ function getOriginUrl()
 {
 	originUrl = unescape(gup(window.location.toString(), 'o'));
 	
-	if (!isUrl(originUrl))
+	if (!isUrl(originUrl) && originUrl != null && originUrl != "")
 	{
 		originUrl = userSettingsManager.getSearchUrl(originUrl);
 	}
