@@ -142,7 +142,8 @@ function LinksManager(linksListParentId, staticTopLink)
 	
 	this.resetTabWidth = function()
 	{
-		var totalWidth = $(this.linksListParentElement).width();
+		// -25 for plusButton
+		var totalWidth = $(this.linksListParentElement).parent().width() - 25;
 			
 		if (totalWidth < (this.tabWidth * this.tabCount) || this.tabWidth < 200)
 		{

@@ -91,6 +91,9 @@ linkDroppedEventHandler = function(dropEventData)
 			<div id="linksListParentBottom">
                 <!--Tabs should come here-->
 			</div>
+			<span id="plusButton" onclick="plusButtonClick(this, event)">
+				+
+			</span>
 		</td>
 		<td id="bottomRightTd">
 			<a id="viewSessionLink" href="#" target="baseFrame" onclick="frameManager.showBaseFrame();">
@@ -357,5 +360,16 @@ function OLMouseMove(event, sourceElem)
 	//rightOL.style.width = (newX + viewSquareSize)+'px';
 	//leftOL.style.width = (newX - viewSquareSize)+'px';
 }
+
+function plusButtonClick(thisObj, eventData)
+{
+	var randomnumber=Math.floor(Math.random()*100000);
+	var newUrl = "http://www.google.com/webhp?" + randomnumber;
+	// TODO
+	// userSettingsManager.getDefaultOriginUrl();
+	var nLink = new Link(newUrl , frameManager.getCurrentUrl());
+	linksManager.addLink(nLink);
+}
+
 </script>
 </html>

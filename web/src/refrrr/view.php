@@ -21,9 +21,10 @@ function getQueryParams($queryString)
 	return $arr;
 }
 
-function showDefaultLink($linkUrl)
+function showDefaultLink($linkUrl, $parsedUrl)
 {
-	print "<a href='$linkUrl'>$linkUrl</a>";
+	$faviconUrl = "http://s2.googleusercontent.com/s2/favicons?domain=".$parsedUrl["host"];
+	print "<div class='defaultLinkDiv'><img src='$faviconUrl' /><a href='$linkUrl' target='_blank'>$linkUrl</a></div>";
 }
 
 function showYoutubeLink($linkUrl, $parsedUrl)
@@ -37,11 +38,13 @@ function showYoutubeLink($linkUrl, $parsedUrl)
 	{
 		//$youtubeEmbedText = "Red";
 		$videoId = $params["v"];
+		print("<div class='youtubeVideoDiv'>");
 		printf($youtubeEmbedText, $videoId);
+		print("</div>");
 	}
 	else
 	{
-		showDefaultLink($linkUrl);
+		showDefaultLink($linkUrl, $parsedUrl);
 	}
 }
 
@@ -60,13 +63,13 @@ function showGoogleImageLink($linkUrl, $parsedUrl)
 	$h = intval($params["h"]);
 	$w = intval($params["w"]);
 	
-	$ht = 200.0;
+	$ht = 300.0;
 	
 	$scalingFactor = $ht / ($h * 1.0);
 
 	$wd = $w * $scalingFactor;
 	
-	printf('<div class="imgDiv"><img src="%1$s" alt="" width="%2$d" height="%3$d" /></div>', $imgurl, $wd, $ht);
+	printf('<div class="imgDiv"><a href="%1$s" target="_blank"><img src="%1$s" alt="" width="%2$d" height="%3$d" /></a></div>', $imgurl, $wd, $ht);
 }
 
 function showImageLink($linkUrl, $parsedUrl)
@@ -77,14 +80,26 @@ function showImageLink($linkUrl, $parsedUrl)
 	$ht = 200;
 	$wd = 200;
 	
-	printf('<div class="imgDiv"><img src="%1$s" alt="" width="%2$dpt" height="%3$dpt" /></div>', $imgurl, $wd, $ht);
+	printf('<div class="imgDiv"><a href="%1$s" target="_blank"><img src="%1$s" alt="" width="%2$dpt" height="%3$dpt" /></a></div>', $imgurl, $wd, $ht);
 }
 
 ?>
+
+<script type="text/javascript" src="js/supporting.js" ></script>
+
+<link rel="stylesheet" type="text/css" href="css/base.css">
 <style>
-.imgDiv{display:inline-block;padding:20px;}
+body{margin-left:auto;margin-right:auto;width:940px;}
+#topMessage{}
+.defaultLinkDiv{margin:20px;}
+.defaultLinkDiv a{margin:20px;color:#444;}
+.imgDiv{display:inline-block;margin:20px;width:100%;}
+.imgDiv img{border:0px;}
+.youtubeVideoDiv{margin:20px;}
 </style>
+<div id="topMessage">
 It contains following links
+</div>
 <?php
 
 //var_dump($session);
@@ -104,7 +119,8 @@ foreach ($session[TAB_LINKS] as $link)
 		showYoutubeLink($linkUrl, $parsedUrl);
 	}
 	// http://t1.gstatic.com/images?q=tbn:ANd9GcRxotCpzlqMnuIlxGZkQpY4bE7B70sj6SXbZQ1Vv4MKr_9jnik&t=1&usg=__QWIP8L9tEwDjx8Gf1sjTPoWfbJA=
-	else if ($parsedUrl["host"] == "www.google.com" && $parsedUrl["path"]=="/imgres")
+	else if (($parsedUrl["host"] == "www.google.com" || $parsedUrl["host"] == "www.google.co.in" || $parsedUrl["host"] == "www.google.co.uk") 
+	&& $parsedUrl["path"]=="/imgres")
 	{
 		showGoogleImageLink($linkUrl, $parsedUrl);
 	}
@@ -114,7 +130,7 @@ foreach ($session[TAB_LINKS] as $link)
 	}
 	else
 	{
-		showDefaultLink($linkUrl);
+		showDefaultLink($linkUrl, $parsedUrl);
 	}
 	print "</div>";
 }
