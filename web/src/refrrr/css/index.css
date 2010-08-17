@@ -1,0 +1,6 @@
+#addSearchBox{display:none;}
+
+#subscribeDiv{font-size:20px;width:100%;border:1px solid #888;padding:25px;margin-top:20px;}
+#subscribeDiv input,button{height:30px;}
+#subscribeDiv #o{width:400px;}
+#subscribeDiv button{width:70px;}

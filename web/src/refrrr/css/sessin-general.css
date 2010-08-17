@@ -10,7 +10,7 @@ h2{font-size:23px;padding:0px;margin:10px;}
 #mainTip #exampleLink{color:#999;font-size:90%;}
 #dragDemo{float:right;display:none;border:1px solid;background-color:red;position:relative;top:-20px;}
 
-#startSessionNavig{font-size:20px;width:100%;border:1px solid #888;padding:30px;}
+#startSessionNavig{font-size:20px;width:100%;border:1px solid #888;padding:25px;}
 #startSessionNavig input,button{height:30px;}
 #startSessionNavig #o{width:400px;}
 #startSessionNavig button{width:70px;}

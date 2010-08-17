@@ -12,6 +12,27 @@ function Communicator()
 		);
 	}
 	
+	this.getDataSync = function(path, data)
+	{
+		var targetPath = path;
+		
+		var ajaxReturnVal = null;
+		
+		$.ajax(
+				{
+				async : false,
+				url : targetPath,
+				data : data,
+				success : function(data)
+				{
+					ajaxReturnVal = data;
+				}
+			}
+		);
+		
+		return ajaxReturnVal;
+	}
+	
 	this.sendNOCallBack = function(path, data)
 	{
 		var targetPath = path;
@@ -49,5 +70,12 @@ function Communicator()
 		var data = {"_id" : sessionId, 
 					"url" : linkurl};
 		this.sendNOCallBack("removeLink.php", data, function(){});
+	}
+	
+	this.getDialogHtml = function(path)
+	{
+		alert("Return something");
+		
+		return this.getDataSync(path);
 	}
 }

@@ -63,11 +63,26 @@ function showGoogleImageLink($linkUrl, $parsedUrl)
 	$h = intval($params["h"]);
 	$w = intval($params["w"]);
 	
+	if ($w > 900)
+	{
+		$wd = 900;
+		$scalingFactor = $wd / ($w * 1.0);
+	}
+	else
+	{
+		$wd = $w;
+		$scalingFactor = 1.0;
+	}
+	
+	$ht = $h * $scalingFactor;
+	
+/*
 	$ht = 300.0;
 	
 	$scalingFactor = $ht / ($h * 1.0);
 
 	$wd = $w * $scalingFactor;
+*/
 	
 	printf('<div class="imgDiv"><a href="%1$s" target="_blank"><img src="%1$s" alt="" width="%2$d" height="%3$d" /></a></div>', $imgurl, $wd, $ht);
 }
@@ -89,11 +104,11 @@ function showImageLink($linkUrl, $parsedUrl)
 
 <link rel="stylesheet" type="text/css" href="css/base.css">
 <style>
-body{margin-left:auto;margin-right:auto;width:940px;}
+body{margin-left:auto;margin-right:auto;width:940px;font-size:70%;}
 #topMessage{}
 .defaultLinkDiv{margin:20px;}
 .defaultLinkDiv a{margin:20px;color:#444;}
-.imgDiv{display:inline-block;margin:20px;width:100%;}
+.imgDiv{display:inline-block;margin:20px;width:100%;text-align:center;}
 .imgDiv img{border:0px;}
 .youtubeVideoDiv{margin:20px;}
 </style>

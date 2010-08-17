@@ -8,6 +8,30 @@
 <link rel="stylesheet" type="text/css" href="css/reset-fonts-grids.css">
 <link rel="stylesheet" type="text/css" href="css/base.css">
 <link rel="stylesheet" type="text/css" href="css/sessin-general.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+
+<link rel="search" type="application/opensearchdescription+xml" title="Sess.in" href="plugin/SessinSearchPlugin.xml">
+
+<script>
+function installSearchEngine() {
+	alert('sd');
+ if (window.external && ("AddSearchProvider" in window.external)) {
+   // Firefox 2 and IE 7, OpenSearch
+   
+   window.external.AddSearchProvider("http://sess.in/plugin/SessinSearchPlugin.xml");
+ } else if (window.sidebar && ("addSearchEngine" in window.sidebar)) {
+   // Firefox <= 1.5, Sherlock
+   //window.sidebar.addSearchEngine("http://example.com/search-plugin.src",
+                                  //"http://example.com/search-icon.png",
+                                  //"Search Plugin", "");
+	alert("No search engine support");
+ } else {
+   // No search engine support (IE 6, Opera, etc).
+	alert("No search engine support");
+ }
+}
+</script>
+
 </head>
 <body>
 <div id="doc4" class="yui-t7">
@@ -35,6 +59,19 @@
 				<br />
 				<span style="font-size:70%;"><i>This session will be stored in this browser.</i></span>
 				</form>
+				</div>
+				<div id="addSearchBox">
+					<a href="#" onclick="installSearchEngine(); return false;">Add Sess.in with Google</a>
+				</div>
+				<div id="subscribeDiv">
+					Get informed when there is bigger release
+					<form action="subscribe.php">
+					Email: <input type="text" value="" name="email" id="email"></input>
+					<button>Submit</button>
+					<br />
+					<span style="font-size:70%;"><i>Your email is safe with us.</i></span>
+					<br />
+					</form>
 				</div>
 			</div>
 		</div>

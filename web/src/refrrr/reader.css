@@ -113,7 +113,6 @@ div.displayInline{display:inline;}
 #bottomWhiteSpaceForChrome {display:none;}
 #bottomWhiteSpaceForChrome td {height:10px;background-color:#d2e1f6;} /*background-color:#d2e1f6;background-color:#004d89;*/
 
-#sharelink{font-size:80%;tect-decoration:none;color:#555;}
 #statusUrl{font-size:80%;float:right;opacity:0.9;width:50%;border:0px;background-color:transparent;text-align:right;}
 
 #bottomPrevTd{width:15px;}
@@ -121,3 +120,16 @@ div.displayInline{display:inline;}
 
 #prevButton{height:40px;width:20px;}/*width:100%;height:100%;}*/
 #nextButton{height:40px;width:20px;}/*width:100%;height:100%;}*/
+
+.floatDiv{position:absolute;left:0px;top:0px;z-index:10;}
+
+#sessionMenu{border:1px solid;background-color:White;display:none;z-index:11;margin:0px;padding:10px;}
+
+#sessionMenu li{display:block;background-color:#eee;margin:5px;}
+#sessionMenu a{text-decoration:none;font-size:15px;color:#555;}
+
+/*
+#sharelink{font-size:80%;text-decoration:none;color:#555;}
+*/
+
+#backgroundForDialog{width:100%;height:100%;background-color:transparent;display:none;}

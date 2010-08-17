@@ -47,6 +47,13 @@ class MongoCollectionBase
 
 		return $collection->ensureIndex($keys);
 	}
+	
+	protected static function ensureIndexUnique($keys, $collectionName)
+	{
+		$collection = MongoCollectionBase::getCollection($collectionName);
+
+		return $collection->ensureIndex($keys, array("unique" => true, "dropDups" => true));
+	}
 }
 
 ?>

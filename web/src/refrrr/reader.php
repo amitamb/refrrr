@@ -17,6 +17,7 @@
 <script type="text/javascript" src="js/UserSettingsManager.js" ></script>
 <script type="text/javascript" src="js/SessionData.js" ></script>
 <script type="text/javascript" src="js/Communicator.js" ></script>
+<script type="text/javascript" src="js/menu.js" ></script>
 
 <script type="text/javascript">
 
@@ -76,8 +77,10 @@ linkDroppedEventHandler = function(dropEventData)
 		<td id="bottomPrevTd" rowspan="2">
 			<button id="prevButton" onclick="linksManager.prev()"><</button>
 		</td>	
-		<td colspan="2">
-			<a id="sharelink" href="#">Share current tabs</a>
+		<td colspan="3">
+			<!--
+				<a id="sharelink" href="#">Share current tabs</a>
+			-->
 			&nbsp;
 			<input type="text" id="statusUrl"></input>
 		</td>
@@ -86,7 +89,11 @@ linkDroppedEventHandler = function(dropEventData)
 		</td>
 	</tr>
 	<tr>	
-
+	    <td id="bottomLeftTd" style="width:70px;">
+			<button id="sessionMenuButton" style="width:70px;height:30px;" onclick="showSessionMenu(this, event)">
+				Session&darr;
+			</button>
+	    </td>
 	    <td id="bottomTd">
 			<div id="linksListParentBottom">
                 <!--Tabs should come here-->
@@ -149,7 +156,7 @@ linkDroppedEventHandler = function(dropEventData)
 				</div>
 			</div>
 		</td>
-		<td id="righttd" colspan="4">
+		<td id="righttd" colspan="5">
 			<div id="navigFrameParent">
 <!--
 		<iframe name="searchFrame" id="searchFrame" src="about:blank"></iframe>
@@ -158,6 +165,25 @@ linkDroppedEventHandler = function(dropEventData)
 		</td>
 	</tr>
 </table>
+</div>
+
+<!---
+Following are some extra divs that can be used 
+for showing some menus etc.
+-->
+<div id="sessionMenu" class="floatDiv">
+<ul>
+<li><a id="sharelink" href="#">Share</a></li>
+<li><a id="viewlink" href="#">View</a></li>
+</ul>
+<!--
+Floating div comes here add somethign here
+-->
+</div>
+<div id="backgroundForDialog" class="floatDiv" onclick="hideBackgroundForDialog();hideDialogFn();">
+<!--
+Background when some doalog is shown to user
+-->
 </div>
 </body>
 <script>
