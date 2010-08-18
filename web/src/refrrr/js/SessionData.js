@@ -93,6 +93,7 @@ function initAll(offlineMode, session)
 			
 			setShareLink(session);
 			setViewLink(session);
+			setResetLink(session)
 			
 			// set view link
 			$("#viewSessionLink").attr("href", "view.php?_id="+session._id);
@@ -112,6 +113,11 @@ function setViewLink(session)
 {
 	$("#viewlink").attr("href", "view.php?_id="+session._id);
 	$("#viewlink").attr("target", "_blank");
+}
+
+function setResetLink(session)
+{
+	$("#resetlink").click(function(){linksManager.reset();});
 }
 
 function showTabLinks(session)

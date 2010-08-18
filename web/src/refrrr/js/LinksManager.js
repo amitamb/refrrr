@@ -79,6 +79,23 @@ function LinksManager(linksListParentId, staticTopLink)
 			// Stop blinking in 1000 millis
 			setTimeout(function(){window._blinkingDiv.removeClass("blink")}, 500);
 		}
+		
+		return linkDivId;
+	}
+	
+	this.selectLink = function(linkDivId)
+	{
+		var url = $("#"+linkDivId).children("a:first").attr('href');
+
+		linksManager.linkSelected(linkDivId);
+		frameManager.navigateTo(url);
+	}
+	
+	this.addLinkAndSelect = function(nLink, isStaticTopLink, dontContactServer)
+	{
+		var linkDivId = this.addLink(nLink, isStaticTopLink, dontContactServer);
+		this.selectLink(linkDivId);
+		return linkDivId;
 	}
 	
 	this.removeLink = function(linkDivObj)
@@ -139,7 +156,7 @@ function LinksManager(linksListParentId, staticTopLink)
 		// ask server to remove it
 		communicator.removeLink(sessionData.getId(), url);
 	}
-	
+
 	this.resetTabWidth = function()
 	{
 		// -25 for plusButton
@@ -321,7 +338,7 @@ function LinksManager(linksListParentId, staticTopLink)
 		
 		for (var i=currentIdNumber+1; i<=nextLinkDivId; i++)
 		{
-			var linkDivId = "linkDiv"+i
+			var linkDivId = "linkDiv"+i;
 			
 			if (document.getElementById(linkDivId) == null)
 			{
@@ -346,7 +363,7 @@ function LinksManager(linksListParentId, staticTopLink)
 		
 		for (var i=currentIdNumber-1; i>0; i--)
 		{
-			var linkDivId = "linkDiv"+i
+			var linkDivId = "linkDiv"+i;
 			
 			if (document.getElementById(linkDivId) == null)
 			{

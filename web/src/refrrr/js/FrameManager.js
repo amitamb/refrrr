@@ -74,6 +74,12 @@ function Frame(url, iFrameId, backgroundFrame)
 		}
 		
 		showIframeObj(this.iframeObj);
+		
+		// nothing works
+		//$(this.iframeObj).focus();
+		//alert(this.iframeObj.contentWindow.focus); //();
+		//this.iframeObj.contentWindow.focus();
+		//this.iframeObj.setActive();
 	}
 	
 	function showIframeObj(iframeObj)

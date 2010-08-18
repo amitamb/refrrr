@@ -9,13 +9,19 @@ $sharedSession = Session::shareSession();
 ?>
 
 
-Use following link to share tabs
-
-<br />
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<style>
+body{margin-left:auto;margin-right:auto;width:940px;font-size:14px;}
+#topMessage{}
+.defaultLinkDiv{margin:20px;}
+.defaultLinkDiv a{margin:20px;color:#444;}
+.imgDiv{display:inline-block;margin:20px;width:100%;text-align:center;}
+.imgDiv img{border:0px;}
+.youtubeVideoDiv{margin:20px;}
+</style>
 <h2>
-<a href="reader.php?id=<?php echo $sharedSession[ID]; ?>">Use this link</a>
+<a href="reader.php?id=<?php echo $sharedSession[ID]; ?>">Use this link</a> for sharing.
 </h2>
-<br />
 It contains following links
 
 <ul>

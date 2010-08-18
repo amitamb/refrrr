@@ -23,6 +23,9 @@
 
 linkDroppedEventHandler = function(dropEventData)
 {
+	//alert("P");
+	var direction = getDropDirection(dropEventData.x, dropEventData.y, lastKnownMouseX, lastKnownMouseY);
+	
 	var url = dropEventData.url;
 	var text = dropEventData.text;
 	var actualUrl = null;
@@ -54,7 +57,15 @@ linkDroppedEventHandler = function(dropEventData)
 	if (dropEventData.parentElementId == "linksListParent")
 	{
 		var nLink = new Link(actualUrl, frameManager.getCurrentUrl());
-		linksManager.addLink(nLink);
+		
+		if (direction == dropDirection.RT)
+		{
+			var linkDivId = linksManager.addLinkAndSelect(nLink);
+		}
+		else
+		{
+			var linkDivId = linksManager.addLink(nLink);
+		}
 	}
 	else if (dropEventData.parentElementId == "commonLinksParent")
 	{
@@ -173,8 +184,9 @@ for showing some menus etc.
 -->
 <div id="sessionMenu" class="floatDiv">
 <ul>
-<li><a id="sharelink" href="#">Share</a></li>
-<li><a id="viewlink" href="#">View</a></li>
+<li><a id="resetlink" href="#"><img src="images/close.gif" />Close All Tabs</a></li>
+<li><a id="sharelink" href="#"><img src="images/share.gif" />Share</a></li>
+<li><a id="viewlink" href="#"><img src="images/list.png" />View</a></li>
 </ul>
 <!--
 Floating div comes here add somethign here
@@ -251,8 +263,8 @@ function fnHandleDrop(event)
 	// Cancel default action.
 	fnCancelDefault(event);
 
-	x = 0;
-	y = 0;
+	x = event.clientX;
+	y = event.clientY;
 	url = oData.getData("URL");
 	text = oData.getData("Text");
 	
@@ -330,6 +342,8 @@ var clientWidth = rightOL.clientWidth;
 
 var lastResizeX = 0;
 
+var lastKnownMouseX, lastKnownMouseY;
+
 function OLMouseMove(event, sourceElem)
 {
 	//alert("move");
@@ -339,6 +353,9 @@ function OLMouseMove(event, sourceElem)
 	
 	var X = event.clientX;
 	var Y = event.clientY;
+	
+	lastKnownMouseX = X;
+	lastKnownMouseY = Y;
 	
 	//if (lastResizeX >= X || (X - (lastResizeX - viewSquareSize)) >= 0)
 	
@@ -394,7 +411,48 @@ function plusButtonClick(thisObj, eventData)
 	// TODO
 	// userSettingsManager.getDefaultOriginUrl();
 	var nLink = new Link(newUrl , frameManager.getCurrentUrl());
-	linksManager.addLink(nLink);
+	linksManager.addLinkAndSelect(nLink);
+}
+
+var dropDirection = {
+    RT : 0,
+    RB : 1,
+    LT : 2,
+    LB : 3
+}
+
+function getDropDirection(destX, destY,  sourceX, sourceY)
+{	
+	if (destX > sourceX)
+	{
+		// right
+		if (destY > sourceY)
+		{
+			// bottom
+			retval = dropDirection.RB;
+		}
+		else
+		{
+			// top
+			retval = dropDirection.RT;
+		}
+	}
+	else
+	{
+		// left
+		if (destY > sourceY)
+		{
+			// bottom
+			retval = dropDirection.LB;
+		}
+		else
+		{
+			// top
+			retval = dropDirection.LT;
+		}
+	}
+	
+	return retval;
 }
 
 </script>

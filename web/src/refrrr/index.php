@@ -85,4 +85,8 @@ function installSearchEngine() {
 	</div>
 </div>
 </body>
+<script>
+var o = document.getElementById('o');
+o.focus();
+</script>
 </html>

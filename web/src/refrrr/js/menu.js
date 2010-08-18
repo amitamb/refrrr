@@ -29,6 +29,18 @@ function showSessionMenu(sourceElement, eventData)
 		hideDialogFn();
 		hideBackgroundForDialog()
 	});
+	
+	$("#sessionMenu a").mouseenter(function(){
+		//$(this).css("background-color", "Red");
+		$(this).addClass("menuItemHighlight");
+	});
+	
+	$("#sessionMenu a").mouseleave(function(){
+		//$(this).parent().css("background-color","blue")
+		//$(this).parent().removeClass("menuItemHighlight");
+		//$(this).css("background-color", "Blue");
+		$(this).removeClass("menuItemHighlight");
+	});
 
 	hideDialogFn = function()
 	{
