@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
 	def index
-		@title = "This is home page"
+		@title = "Sess.in - Better web sessions"
 	end
 end

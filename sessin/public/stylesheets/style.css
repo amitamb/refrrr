@@ -17,7 +17,6 @@ font-size:80%;
 #header
 {
 	height:150px;
-	background:url('../images/header_bg.png') repeat-x;
 }
 
 #logo_image 
@@ -56,154 +55,13 @@ font-size:80%;
 
 #content
 {
-	margin:75px 0px 50px 220px;
+	margin:50px 0px 50px 50px;
 	padding: 5px;
 }
 
-#sidebar
+#footer
 {
-	position:absolute;
-	top:230px;
-	left:20px;
-	width:170px;
-}
-
-#Menu
-{
-	display:block;
-	float:left;
-	padding:10px;
-	background-color:#eee;
-	border:1px dashed #999;
-	line-height:17px;
-	width:170px;
-	margin-bottom:20px;
-}
-
-#home_menu
-{
-	list-style:none;
-	margin:0px;
-	padding:0px;
-}
-
-#home_menu li
-{
-	padding-top:20px;
-	padding-bottom:20px;
-	font-size:1.5em;
-	color:blue;
-}
-
-.home_quote
-{
-	font-family:Verdana, Ariel, Helvetica, sans-serif;
-	float:left;
-	margin-left:25px;
-	font-size:12pt;
-	color:#777777;
-	border: 3px solid #0066cc;
-	width: 75%;
-	padding:15px;
-	background-color:#a6cae1;
-}
-
-.home_quote.quote_title
-{
-	display:block;
-	font-size:14pt;
-	font-weight:bold;
-	color:gray;
-	margin-bottom:15px;
-}
-
-// Implementing registration
-#signup_content
-{
-	float: left;
-	padding-left: 50px;
-	width:400px;
-	text-align:right;
-}
-
-#signup_content.title, #login_content.title
-{
-	font-weight:bold;
-}
-
-.signup_field,.login_field
-{
-	white-space:nowrap;
-	padding-bottom:.5em;
-	text-align:left;
-}
-
-.signup_field label, .login_field label
-{
-	display: block;
-	float: left;
-	margin-right:0.5em;
-	text-align:right;
-	width:12em;
-}
-
-.signup_field input, .login_field input
-{
-	text-align:left;
-}
-
-#user_menu
-{
-	float:right;
-	font-weight:bold;
-	margin-right:35px;
-	margin-top:15px;
-}
-
-#user_menu a, #user_menu a:visited
-{
-	color:orange;
-}
-
-.signin_box
-{
-	float:left;
-	background: #cccccc;
-	border: solid 1px #f98919;
-	
-	padding-bottom:6px;
-	padding-top:8px;
-	padding-right: 10px;
-	margin-top: 10px;
-	text-align: right;
-	width: 250px;
-	height: 150px;
-}
-
-#signin_form, #signin_button
-{
-	margin:0px;
-	padding: 0px;
-}
-
-#sign_in_title
-{
-	padding-bottom: 5px;
-	text-align:left;
-	margin-left:20px;
-	color:gray;
-	font-weight: bold;
-	font-size: 12pt;
-}
-
-#signin_section
-{
-	float:right;
-	margin-right: 25px;
-}
-
-.signin_field
-{
-	margin-bottom:8px;
-	color:gray;
+	text-align: center;
+	color:#bbb;
+	bottom:0px;
 }
