@@ -54,6 +54,11 @@ class MongoCollectionBase
 
 		return $collection->ensureIndex($keys, array("unique" => true, "dropDups" => true));
 	}
+	
+	public static function clearCollection()
+	{
+		MongoCollectionBase::$collection = null;
+	}
 }
 
 ?>

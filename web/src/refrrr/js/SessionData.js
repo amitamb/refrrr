@@ -96,7 +96,7 @@ function initAll(offlineMode, session)
 			setResetLink(session)
 			
 			// set view link
-			$("#viewSessionLink").attr("href", "view.php?_id="+session._id);
+			//$("#viewSessionLink").attr("href", "view.php?_id="+session._id);
 			//view.php?_id=
 		}
 	}

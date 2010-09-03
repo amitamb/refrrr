@@ -2,7 +2,7 @@ function Communicator()
 {
 	this.getData = function(path, data, callback)
 	{
-		var targetPath = "/greader/"+path+".json";
+		var targetPath = path;
 		$.getJSON(
 			targetPath,
 			data,
@@ -62,7 +62,9 @@ function Communicator()
 	{
 		var data = {"_id" : sessionId, 
 					"url" : linkurl};
-		this.sendNOCallBack("addLink.php", data, function(){});
+		this.getData("addLink.php", data, function(data){
+			
+		});
 	}
 	
 	this.removeLink = function(sessionId, linkurl) // no callback needed
@@ -77,5 +79,21 @@ function Communicator()
 		alert("Return something");
 		
 		return this.getDataSync(path);
+	}
+	
+	this.getOtherLink = function(url)
+	{
+		var data = {"url" : url};
+		this.getData("getOtherLinks.php", data, function(data){
+			if (data!=null)
+			{
+				linksManager.addOtherLink(data.pageUrl, new OtherLink(data.pageUrl, data.otherLinkUrl, data.otherLinkTitle));
+			}
+		});
+		
+		if (linksManager != null)
+		{
+			//linksManager.addOtherLink(url, new OtherLink(originUrl, "http://www.bing.com/", "Comments"));
+		}
 	}
 }

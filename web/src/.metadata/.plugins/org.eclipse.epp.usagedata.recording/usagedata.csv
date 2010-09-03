@@ -1,4 +1,22 @@
 what,kind,bundleId,bundleVersion,description,time
-activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281813016959
-deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281813018181
-closed,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1281813020234
+started,bundle,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console",1282247878120
+started,bundle,org.eclipse.mylyn.commons.ui,3.2.2.v20090912-0400-e3x,"org.eclipse.mylyn.commons.ui",1282247878156
+started,bundle,org.eclipse.team.cvs.ui,3.3.201.R35x_v20090826-0905,"org.eclipse.team.cvs.ui",1282247878217
+started,bundle,org.eclipse.mylyn.bugzilla.core,3.2.2.v20090912-0400-e3x,"org.eclipse.mylyn.bugzilla.core",1282247878286
+started,bundle,org.eclipse.mylyn.bugzilla.ui,3.2.2.v20090912-0400-e3x,"org.eclipse.mylyn.bugzilla.ui",1282247878321
+started,bundle,org.eclipse.ui.forms,3.4.1.v20090714_35x,"org.eclipse.ui.forms",1282247878367
+started,bundle,org.eclipse.mylyn.context.core,3.2.2.v20090912-0400-e3x,"org.eclipse.mylyn.context.core",1282247878622
+started,bundle,org.eclipse.mylyn.context.ui,3.2.2.v20090912-0400-e3x,"org.eclipse.mylyn.context.ui",1282247878848
+started,bundle,org.eclipse.mylyn.tasks.ui,3.2.2.v20090912-0400-e3x,"org.eclipse.mylyn.tasks.ui",1282247878890
+started,bundle,org.eclipse.mylyn.team.ui,3.2.2.v20090912-0400-e3x,"org.eclipse.mylyn.team.ui",1282247878901
+started,bundle,org.eclipse.update.scheduler,3.2.200.v20081127,"org.eclipse.update.scheduler",1282247878937
+started,bundle,org.eclipse.epp.usagedata.ui,1.1.0.R200906100410,"org.eclipse.epp.usagedata.ui",1282247879025
+started,bundle,org.eclipse.mylyn.monitor.ui,3.2.2.v20090912-0400-e3x,"org.eclipse.mylyn.monitor.ui",1282247879073
+started,bundle,org.eclipse.update.core,3.2.300.v20090525,"org.eclipse.update.core",1282247879080
+started,bundle,org.eclipse.wst.ws.service.policy.ui,1.0.102.v200903070248,"org.eclipse.wst.ws.service.policy.ui",1282247879358
+started,bundle,org.eclipse.php.debug.daemon,2.1.1.v20090707-1108,"org.eclipse.php.debug.daemon",1282247879528
+started,bundle,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui",1282247879932
+started,bundle,org.eclipse.php.server.core,2.1.1.v20090707-1108,"org.eclipse.php.server.core",1282247879933
+closed,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1282247880143
+error,log,,,"Unhandled event loop exception during blocked modal context.",1282247880367
+started,bundle,org.eclipse.php.debug.core,2.1.1.v20090914-1400,"org.eclipse.php.debug.core",1282247880647

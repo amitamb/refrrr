@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,org.eclipse.dltk.ui,1.0.1.v20090903-2153,"org.eclipse.dltk.ui",1282247877903
+started,bundle,org.eclipse.php.core,2.1.1.v20090914-1400,"org.eclipse.php.core",1282247877933
+started,bundle,com.python.pydev.analysis,1.5.4.2010011921,"com.python.pydev.analysis",1282247877954
+started,bundle,org.python.pydev,1.5.4.2010011921,"org.python.pydev",1282247877954
+started,bundle,org.python.pydev.core,1.5.4.2010011921,"org.python.pydev.core",1282247877973
+os,sysinfo,,,"linux",1282247877977
+arch,sysinfo,,,"x86_64",1282247877977
+ws,sysinfo,,,"gtk",1282247877977
+locale,sysinfo,,,"en_IN",1282247877977
+processors,sysinfo,,,"4",1282247877977
+java.runtime.name,sysinfo,,,"OpenJDK Runtime Environment",1282247877977
+java.runtime.version,sysinfo,,,"1.6.0_18-b18",1282247877977
+java.specification.name,sysinfo,,,"Java Platform API Specification",1282247877977
+java.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1282247877977
+java.specification.version,sysinfo,,,"1.6",1282247877977
+java.vendor,sysinfo,,,"Sun Microsystems Inc.",1282247877977
+java.version,sysinfo,,,"1.6.0_18",1282247877977
+java.vm.info,sysinfo,,,"mixed mode",1282247877977
+java.vm.name,sysinfo,,,"OpenJDK 64-Bit Server VM",1282247877977
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1282247877977
+java.vm.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1282247877977
+java.vm.specification.version,sysinfo,,,"1.0",1282247877977
+java.vm.vendor,sysinfo,,,"Sun Microsystems Inc.",1282247877977
+java.vm.version,sysinfo,,,"16.0-b13",1282247877977
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1282247878074

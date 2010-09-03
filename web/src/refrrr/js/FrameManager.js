@@ -14,7 +14,7 @@ function Frame(url, iFrameId, backgroundFrame)
 	// TODO later
 	// don't load immediately
 	// newFrame.src = "about:blank";
-	
+
 	if (backgroundFrame)
 	{
 		newFrame.src = "loading.htm"; //"about:blank";
@@ -23,7 +23,7 @@ function Frame(url, iFrameId, backgroundFrame)
 	{
 		newFrame.src = url;
 	}
-		
+
 	if (backgroundFrame)
 	{
 		//newFrame.style.visibility = "hidden";
@@ -84,6 +84,9 @@ function Frame(url, iFrameId, backgroundFrame)
 	
 	function showIframeObj(iframeObj)
 	{
+		iframeObj.style.width = "100%";
+		iframeObj.style.height = "100%";
+		
 		iframeObj.style.visibility = "visible";
 	}
 	
@@ -96,6 +99,9 @@ function Frame(url, iFrameId, backgroundFrame)
 	
 	function hideIframeObj(iframeObj)
 	{
+		iframeObj.style.width = "0%";
+		iframeObj.style.height = "0%";
+		
 		iframeObj.style.visibility = "hidden";
 	}
 	

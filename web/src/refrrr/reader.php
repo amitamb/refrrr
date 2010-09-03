@@ -5,8 +5,12 @@
 
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> 
 
-
+<!--
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+-->
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
 <script type="text/javascript" src="js/supporting.js" ></script>
 <script type="text/javascript" src="js/dragDrop.js" ></script>
 <script type="text/javascript" src="js/init.js" ></script>
@@ -58,7 +62,7 @@ linkDroppedEventHandler = function(dropEventData)
 	{
 		var nLink = new Link(actualUrl, frameManager.getCurrentUrl());
 		
-		if (direction == dropDirection.RT)
+		if (direction == dropDirection.RB)
 		{
 			var linkDivId = linksManager.addLinkAndSelect(nLink);
 		}
@@ -101,7 +105,7 @@ linkDroppedEventHandler = function(dropEventData)
 	</tr>
 	<tr>	
 	    <td id="bottomLeftTd" style="width:70px;">
-			<button id="sessionMenuButton" style="width:70px;height:30px;" onclick="showSessionMenu(this, event)">
+			<button id="logoIcon" style="width:70px;height:30px;" onclick="showSessionMenu(this, event)">
 				Session&darr;
 			</button>
 	    </td>
@@ -114,7 +118,7 @@ linkDroppedEventHandler = function(dropEventData)
 			</span>
 		</td>
 		<td id="bottomRightTd">
-			<a id="viewSessionLink" href="#" target="baseFrame" onclick="frameManager.showBaseFrame();">
+			<a id="viewSessionLink" href="index.php" target="_blank">
                 <img id="rightBottomLogo" src="images/sessin.png" />
             </a>
 		</td>
@@ -169,6 +173,7 @@ linkDroppedEventHandler = function(dropEventData)
 		</td>
 		<td id="righttd" colspan="5">
 			<div id="navigFrameParent">
+				<div id="gotoParentButton" onclick="alert('go up');">&uarr;</div>
 <!--
 		<iframe name="searchFrame" id="searchFrame" src="about:blank"></iframe>
 -->
@@ -184,14 +189,18 @@ for showing some menus etc.
 -->
 <div id="sessionMenu" class="floatDiv">
 <ul>
+<!--
 <li><a id="resetlink" href="#"><img src="images/close.gif" />Close All Tabs</a></li>
+-->
 <li><a id="sharelink" href="#"><img src="images/share.gif" />Share</a></li>
 <li><a id="viewlink" href="#"><img src="images/list.png" />View</a></li>
 </ul>
-<!--
-Floating div comes here add somethign here
--->
 </div>
+
+<div id="otherLinkLinkDiv">
+Show other link
+</div>
+
 <div id="backgroundForDialog" class="floatDiv" onclick="hideBackgroundForDialog();hideDialogFn();">
 <!--
 Background when some doalog is shown to user

@@ -7,6 +7,15 @@ function Link(url, referrer, isStaticTopLink)
 	this.isStaticTopLink = isStaticTopLink;
 }
 
+function OtherLink(pageUrl, otherLink, otherLinkTitle)
+{
+	this.pageUrl = pageUrl;
+	
+	this.otherLink = otherLink;
+	
+	this.otherLinkTitle = otherLinkTitle;
+}
+
 function LinksManager(linksListParentId, staticTopLink)
 {
 	this.tabWidth = 200;
@@ -16,6 +25,9 @@ function LinksManager(linksListParentId, staticTopLink)
 	this.linksListParentElement = document.getElementById(linksListParentId);
 
 	this.urlToLinkDivIdMap = Array();
+	this.linkDivIdToLinkMap = Array();
+	
+	this.urlToOtherLinkMap = Array();
 	
 	this.selectedLinkDivId = null;
 
@@ -37,7 +49,7 @@ function LinksManager(linksListParentId, staticTopLink)
 			var appendHtml = this.getAppendDivHTML(url, linkDivId);
 
 			// this.linksListParentElement.innerHTML = this.linksListParentElement.innerHTML + appendHtml;
-			
+
 			var linksListParentObj = $("#"+linksListParentId).append(appendHtml);
 			this.tabCount++;
 			this.resetTabWidth();
@@ -51,10 +63,16 @@ function LinksManager(linksListParentId, staticTopLink)
 			this.addAllEventHandlers(linkDivId);
 
 			frameManager.navigateTo(url, true);
-						
+
 			if (!dontContactServer)
 			{
 				communicator.addLink(sessionData.getId(), url);
+			}
+
+			if (nLink.parentLink == null || getHostname(nLink.parentLink).endsWith("ycombinator.com"))
+			{
+				communicator.getOtherLink(url);
+				//alert("Getting other link");
 			}
 		}
 		else
@@ -89,6 +107,7 @@ function LinksManager(linksListParentId, staticTopLink)
 
 		linksManager.linkSelected(linkDivId);
 		frameManager.navigateTo(url);
+
 	}
 	
 	this.addLinkAndSelect = function(nLink, isStaticTopLink, dontContactServer)
@@ -215,7 +234,7 @@ function LinksManager(linksListParentId, staticTopLink)
 		return this.urlToLinkDivIdMap[url];
 	}
 	
-	this.addLinkDivIdToMap = function(url, linkDivId)
+	this.addLinkDivIdToMap = function(url, linkDivId, newLink)
 	{
 		this.urlToLinkDivIdMap[url] = linkDivId;
 	}
@@ -284,6 +303,9 @@ function LinksManager(linksListParentId, staticTopLink)
 		//linkDivObj.css("background-color", "#81BEF7");
 		linkDivObj.css("background-color", "#d2e1f6");
 		linkDivObj.css("border-style", "inset");
+		
+		var url = linkDivObj.children("a:first").attr('href');		
+		this.showOtherLink(url);
 	}
 	
 	this.deSelectAll = function()
@@ -424,6 +446,66 @@ function LinksManager(linksListParentId, staticTopLink)
 		
 		return text;
 	}
+	
+	this.reset = function()
+	{
+		//alert("Reset");
+		
+		//var currentIdNumber = parseInt(this.selectedLinkDivId.substr(7));
+		
+		//for (var i=currentIdNumber-1; i>0; i--)
+		//{
+			//var linkDivId = "linkDiv"+i;
+			
+			//if (document.getElementById(linkDivId) == null)
+			//{
+				//continue;
+			//}
+			//else
+			//{
+				//this.linkSelected(linkDivId);
+				//var url = $("#"+linkDivId).children("a:first").attr('href');
+				//frameManager.navigateTo(url);
+				//break;
+			//}
+		//}
+		
+	}
+	
+	this.goToParent = function()
+	{
+		
+	};
+	
+	this.addOtherLink = function(url, otherLink)
+	{
+		//alert("Gre");
+		
+		this.urlToOtherLinkMap[url] = otherLink;
+		
+		if (this.getLinkDivIdForUrl(url) == this.selectedLinkDivId)
+		{
+			this.showOtherLink(url);
+		}
+	};
+	
+	this.showOtherLink = function(url)
+	{
+		var otherLink = this.urlToOtherLinkMap[url];
+		var linkDivObj = $("#otherLinkLinkDiv");
+
+		if (otherLink == null)
+		{
+			linkDivObj.css('visibility', 'hidden');
+		}
+		else
+		{
+			var url = otherLink.otherLink;
+			var text = otherLink.otherLinkTitle;
+			linkDivObj.html("<a href='"+url+"' onclick=\"frameManager.navigateTo('"+url+"');return false;\" >"+text+"</a>");
+			linkDivObj.css('visibility', 'visible');
+		}
+	};
 	
 	//this.addLink(staticTopLink, true);
 	this.addLink(new Link(sessionData.getParentUrl(), null, null), null, true);
