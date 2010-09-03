@@ -1,0 +1,39 @@
+<div id="signup_content">
+	<span class="title">Sign-up for a bookshelf account...</span>
+	<% form_for :user, @user, :url => {:action => "signup"} do |f| %>
+		<%= error_messages_for 'user' %><br />
+		
+		<div class="signup_field">
+			<label for="user_login">Login:</label>
+			<%= f.text_field :login %><br />
+		</div>
+		
+		<div class="signup_field">
+			<label for="user_first_name">First Name:</label>
+			<%= f.text_field :first_name %><br />
+		</div>
+		
+		<div class="signup_field">
+			<label for="user_last_name">Last Name:</label>
+			<%= f.text_field :last_name %><br />
+		</div>
+		
+		<div class="signup_field">
+			<label for="user_email">Email:</label>
+			<%= f.text_field :email %><br />
+		</div>
+		
+		<div class="signup_field">
+			<label for="user_password">Password:</label>
+			<%= f.password_field :password %><br />
+		</div>
+		
+		<div class="signup_field">
+			<label for="user_password_confirmation">Password Confirmation:</label>
+			<%= f.password_field :password_confirmation %><br />
+		</div>
+		
+		<%= submit_tag "Signup" %>
+		
+	<% end %>
+</div>

@@ -1,0 +1,18 @@
+<div id="sidebar">
+	<div id="Menu">
+		<ul id="home_menu">
+			<% if !session[:user] %>
+			<li>
+				<%= link_to 'Join Now',
+					:controller=>'user',
+					:action=>'signup' %>
+			</li>
+			<% end %>
+			<li>
+				<%= link_to 'View the Books',
+					:controller=>'book',
+					:action=>'list'%>
+			</li>
+		</ul>
+	</div>
+</div>
