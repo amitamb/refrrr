@@ -65,3 +65,62 @@ font-size:80%;
 	color:#bbb;
 	bottom:0px;
 }
+
+/* User styles*/
+
+
+#user_menu
+{
+	float:right;
+	font-weight:bold;
+	margin-right:35px;
+	margin-top:15px;
+}
+
+#user_menu a, #user_menu a:visited
+{
+	color:orange;
+}
+
+.signin_box
+{
+	float:left;
+	background: #cccccc;
+	border: solid 1px #f98919;
+	
+	padding-bottom:6px;
+	padding-top:8px;
+	padding-right: 10px;
+	margin-top: 10px;
+	text-align: right;
+	width: 250px;
+	height: 120px;
+}
+
+#signin_form, #signin_button
+{
+	margin:0px;
+	padding: 0px;
+}
+
+#sign_in_title
+{
+	padding-bottom: 5px;
+	text-align:left;
+	margin-left:20px;
+	color:gray;
+	font-weight: bold;
+	font-size: 12pt;
+}
+
+#signin_section
+{
+	float:right;
+	margin-right: 25px;
+}
+
+.signin_field
+{
+	margin-bottom:8px;
+	color:gray;
+}

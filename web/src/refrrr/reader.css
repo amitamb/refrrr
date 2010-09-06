@@ -9,8 +9,8 @@ body{width:100%;height:100%;font-family:"lucida grande",tahoma,verdana,arial,san
 #lefttd{width:230px;display:none;}
 #righttd{}
 
-#gotoParentButton {position:absolute;height:70%;z-index:11;width:5px;vertical-align:middle;background-color:#55b;}
-#gotoParentAndCloseButton {position:absolute;bottom:0px;height:30%;z-index:11;width:5px;vertical-align:middle;background-color:#b55;}
+#gotoParentButton {position:absolute;height:20%;z-index:11;width:3px;vertical-align:middle;background-color:#55b;opacity:0.5;}
+#gotoParentAndCloseButton {position:absolute;bottom:0px;height:80%;z-index:11;width:3px;vertical-align:middle;background-color:#b55;opacity:0.5;}
 
 #navigFrameParent{position:relative;width:100%;height:100%;}
 #navigFrameParent iframe{position:absolute;left:0px;top:0px;width:100%;height:100%;border:0px;z-index:10;}
@@ -62,7 +62,8 @@ div.link table{width:100%;border:0px solid;border-spacing:0px;}
 
 div.link table tr td{border:0px solid;padding:0px;margin:0px;}
 
-div.linkIcon{width:16px;height:16px;padding:2px;}
+div.linkIcon{width:16px;height:16px;padubuntu@ip-10-160-230-79:/var/www$ cd ihinjianigf087935/
+ding:2px;}
 div.linkIcon img{border:0px;}
 
 td.titleTd {width:100%;}
