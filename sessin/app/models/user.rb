@@ -33,7 +33,14 @@ class User < ActiveRecord::Base
 	def self.authenticate(email, pass)
 		u=find(:first, :conditions=>["email = ?", email])
 		return nil if u.nil?
-		return u if User.hash_password(pass, u.password_salt)==u.password_hash
+		if User.hash_password(pass, u.password_salt)==u.password_hash
+			if (u.login_count == nil)
+				u.login_count = 0
+			end
+			u.update_attributes(:login_count => u.login_count+1, :last_login => DateTime.now)
+			u.save_without_validation()
+			return u
+		end
 		nil
 	end
 end
