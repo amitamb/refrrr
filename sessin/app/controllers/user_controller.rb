@@ -8,7 +8,7 @@ class UserController < ApplicationController
 			@user = User.new(params[:user])
 			if @user.save
 				session[:user] = @user
-				flash[:notice] = "User #{@user.login} created!"
+				flash[:notice] = "User #{@user.email} created!"
 				redirect_to :action => "home"
 			else
 				flash[:error] = "Signup unsuccessful"

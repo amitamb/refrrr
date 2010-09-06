@@ -67,7 +67,38 @@ font-size:80%;
 }
 
 /* User styles*/
+#signup_content
+{
+	padding-left: 50px;
+	width:380px;
+	text-align:right;
+}
 
+.title
+{
+	font-weight:bold;
+}
+
+.signup_field,.login_field
+{
+	white-space:nowrap;
+	padding-bottom:.5em;
+	text-align:left;
+}
+
+.signup_field label, .login_field label
+{
+	display: block;
+	float: left;
+	margin-right:0.5em;
+	text-align:right;
+	width:12em;
+}
+
+.signup_field input, .login_field input
+{
+	text-align:left;
+}
 
 #user_menu
 {
