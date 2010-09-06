@@ -6,10 +6,12 @@ require_once("collections/User.php");
 
 define('ID', '_id');
 define('URL', 'url');
+define('CREATED_AT', 'created_at');
 define('USER_ID', 'userId');
 define('TAGS', 'tags');
 
 define('TAB_LINKS', 'tabLinks');
+define('LINKS_HISTORY', 'linksHistory');
 
 define('URL', 'url');
 define('SHARED', 'shared');
@@ -27,6 +29,13 @@ class Session extends MongoCollectionBase
 		return $newSession;
 	}
 	
+	public static function createHistoryLinkFromRequest()
+	{
+		$newLink = array(URL=>requestParam(URL), CREATED_AT => time());
+							
+		return $newLink;
+	}
+	
 	public static function createLinkFromRequest()
 	{
 		$newLink = array(URL=>requestParam(URL));
@@ -34,7 +43,7 @@ class Session extends MongoCollectionBase
 		return $newLink;
 	}
 	
-	public static function getOrCreateSessionByUrl()
+	public static function getOrCreateSessionByUrl($includeHistory = false)
 	{
 		$retval = MongoCollectionBase::executeFindOneQuery(array(URL=>requestParam(URL), USER_ID=> User::getId()), SESSION);
 		
@@ -44,7 +53,7 @@ class Session extends MongoCollectionBase
 			$status = MongoCollectionBase::executeSave($retval, SESSION);
 		}
 		
-		return $retval;
+		return self::removeHistoryBeforeReturning($retval, $includeHistory);
 	}
 	
 	public static function addLink()
@@ -52,6 +61,12 @@ class Session extends MongoCollectionBase
 		$retval = MongoCollectionBase::executeUpdate(
 				array(ID=>new MongoId(requestParam(ID)), USER_ID => User::getId()),						
 				array("\$push"=>array(TAB_LINKS=>Session::createLinkFromRequest())),
+				SESSION);
+				
+		// linksHistory
+		$retval2 = MongoCollectionBase::executeUpdate(
+				array(ID=>new MongoId(requestParam(ID)), USER_ID => User::getId()),						
+				array("\$push"=>array(LINKS_HISTORY=>Session::createHistoryLinkFromRequest())),
 				SESSION);
 				
 		return $retval;
@@ -73,11 +88,21 @@ class Session extends MongoCollectionBase
 		MongoCollectionBase::ensureIndex(array(TAGS=>1),SESSION);
 	}
 	
-	public static function getSessionById()
+	public static function getSessionById($includeHistory = false)
 	{
 		$retval = MongoCollectionBase::executeFindOneQuery(array(ID=>new MongoId(requestParam(ID))), SESSION);
 		
-		return $retval;
+		return self::removeHistoryBeforeReturning($retval, $includeHistory);
+	}
+	
+	protected static function removeHistoryBeforeReturning($session, $includeHistory)
+	{
+		if (! $includeHistory)
+		{
+			$session[LINKS_HISTORY] = null;
+		}
+
+		return $session;
 	}
 	
 	// copies the session in its current state and returns it

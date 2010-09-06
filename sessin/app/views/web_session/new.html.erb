@@ -1,0 +1,6 @@
+
+<% form_tag ({:controller=>'web_session', :action=>'new'}, {:id=>'signin_form'}) do %>
+	<%= text_field "web_session", "start_url_or_search_term", :size => 50  %>
+	<%= submit_tag "Create" %>
+<% end %>
+

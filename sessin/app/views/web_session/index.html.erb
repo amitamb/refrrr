@@ -1,0 +1,18 @@
+<div id="sessionList">
+	<table>
+		<tbody>
+			<% @web_sessions.each { |session| %>
+				<tr>
+				<td>
+				<%= session.start_url_or_search_term %>
+				<td>
+				<%= link_to "Continue", :action => "continue" %>
+			<% } %>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td><%= link_to "New", :action => "new" %></td>
+			</tr>
+		</tfoot>
+	</table>
+</div>

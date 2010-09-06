@@ -41,14 +41,4 @@ class UserController < ApplicationController
 		flash[:notice]="Logged out"
 		redirect_to :controller => 'home', :action => 'index'
 	end
-	
-	def login_required
-		if session[:user]
-			return true
-		end
-		flash[:notice] = "Please login to continue"
-		session[:return_to] = request.request_uri
-		redirect_to :controller => "user", :action => "signup"
-		return false
-	end
 end

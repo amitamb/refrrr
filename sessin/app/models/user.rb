@@ -9,6 +9,7 @@ class User < ActiveRecord::Base
 				
 	attr_accessor :password
 	
+	
 	attr_protected :password_salt
 	
 	def password= (pass)
@@ -16,6 +17,9 @@ class User < ActiveRecord::Base
 		self.password_salt = User.random_string(10) if !self.password_salt?
 		self.password_hash = User.hash_password(@password, self.password_salt)
 	end
+	
+	#associations
+	has_many :web_sessions
 	
 	protected
 	

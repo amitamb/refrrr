@@ -93,6 +93,7 @@ function initAll(offlineMode, session)
 			
 			setShareLink(session);
 			setViewLink(session);
+			setHistoryLink(session);
 			setResetLink(session)
 			
 			// set view link
@@ -113,6 +114,12 @@ function setViewLink(session)
 {
 	$("#viewlink").attr("href", "view.php?_id="+session._id);
 	$("#viewlink").attr("target", "_blank");
+}
+
+function setHistoryLink(session)
+{
+	$("#historylink").attr("href", "sessionHistory.php?_id="+session._id);
+	$("#historylink").attr("target", "_blank");
 }
 
 function setResetLink(session)

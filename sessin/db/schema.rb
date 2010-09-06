@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100904195710) do
+ActiveRecord::Schema.define(:version => 20100906060634) do
 
   create_table "users", :force => true do |t|
     t.string   "email"
@@ -17,6 +17,13 @@ ActiveRecord::Schema.define(:version => 20100904195710) do
     t.string   "password_salt"
     t.integer  "login_count"
     t.datetime "last_login"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "web_sessions", :force => true do |t|
+    t.string   "start_url_or_search_term"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

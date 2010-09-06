@@ -104,16 +104,18 @@ function showImageLink($linkUrl, $parsedUrl)
 
 <link rel="stylesheet" type="text/css" href="css/base.css">
 <style>
-body{margin-left:auto;margin-right:auto;width:940px;font-size:70%;}
+body{margin-left:auto;margin-right:auto;width:940px;font-size:100%;}
 #topMessage{}
 .defaultLinkDiv{margin:20px;}
 .defaultLinkDiv a{margin:20px;color:#444;}
 .imgDiv{display:inline-block;margin:20px;width:100%;text-align:center;}
 .imgDiv img{border:0px;}
 .youtubeVideoDiv{margin:20px;}
+
+.title {font-size:180%;}
 </style>
 <div id="topMessage">
-It contains following links
+<span class="title">View Session</span>
 </div>
 <?php
 
@@ -149,5 +151,4 @@ foreach ($session[TAB_LINKS] as $link)
 	}
 	print "</div>";
 }
-
 ?>

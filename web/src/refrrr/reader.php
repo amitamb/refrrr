@@ -1,7 +1,7 @@
 <html>
 <head>
 
-<title>Social Media Reader</title>
+<title>Sess.in - Making web sessions better</title>
 
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> 
 
@@ -210,6 +210,7 @@ for showing some menus etc.
 -->
 <li><a id="sharelink" href="#"><img src="images/share.gif" />Share</a></li>
 <li><a id="viewlink" href="#"><img src="images/list.png" />View</a></li>
+<li><a id="historylink" href="#"><img src="images/history.png" />History</a></li>
 </ul>
 </div>
 
