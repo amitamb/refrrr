@@ -47,6 +47,8 @@ function LinksManager(linksListParentId, staticTopLink)
 			var linkDivId = this.getNextLinkDivId();
 
 			var appendHtml = this.getAppendDivHTML(url, linkDivId);
+			
+			this.addLinkDivIdToMap(url, linkDivId, nLink);
 
 			// this.linksListParentElement.innerHTML = this.linksListParentElement.innerHTML + appendHtml;
 
@@ -237,6 +239,7 @@ function LinksManager(linksListParentId, staticTopLink)
 	this.addLinkDivIdToMap = function(url, linkDivId, newLink)
 	{
 		this.urlToLinkDivIdMap[url] = linkDivId;
+		this.linkDivIdToLinkMap[linkDivId] = newLink;
 	}
 	
 	this.getLinkIdForUrl = function(url)
@@ -411,8 +414,6 @@ function LinksManager(linksListParentId, staticTopLink)
 		var tooltipText = url;
 		
 		getTitleForUrl(url, getTitleCallBack, this);
-		
-		this.addLinkDivIdToMap(url, linkDivId);
 
 		var text = "";
 		if (getBrowser() == "ie")
@@ -504,6 +505,37 @@ function LinksManager(linksListParentId, staticTopLink)
 			var text = otherLink.otherLinkTitle;
 			linkDivObj.html("<a href='"+url+"' onclick=\"frameManager.navigateTo('"+url+"');return false;\" >"+text+"</a>");
 			linkDivObj.css('visibility', 'visible');
+		}
+	};
+	
+	this.goUp = function(closeCurrent)
+	{
+		if (!closeCurrent)
+		{
+			closeCurrent = false;
+		}
+		
+		var currentLinkDivId = this.selectedLinkDivId;
+		
+		var parentUrl = this.linkDivIdToLinkMap[currentLinkDivId].parentLink;
+	
+		if (parentUrl)
+		{
+			var parentLinkDivId = this.urlToLinkDivIdMap[parentUrl];
+			
+			if (parentLinkDivId)
+			{
+				this.selectLink(parentLinkDivId);
+			}
+		}
+		else
+		{
+			
+		}
+		
+		if (closeCurrent == true)
+		{
+			this.removeLink($("#"+currentLinkDivId));
 		}
 	};
 	

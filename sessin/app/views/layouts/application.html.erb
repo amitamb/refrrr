@@ -12,6 +12,14 @@
 	{:controller=>'home', :action=>'index'}%>
 </div>
 
+<% if session[:user] %>
+	<div id="user_menu">
+		<%= link_to "Logout", :controller=>'user', :action=>'logout' %>
+	</div>
+<% else %>
+	<%= render :partial=>"user/signin" %>
+<% end %>
+
 	<div style="clear:both; height: 0px;"></div>
 
 </div>
